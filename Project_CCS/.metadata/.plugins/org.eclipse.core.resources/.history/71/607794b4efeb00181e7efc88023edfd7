@@ -1,0 +1,68 @@
+/**
+ * \file main.cpp
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 10, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  main.c
+ *
+ * \brief: Provides main function
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Rev
+ *
+ * Revision: 1.0   10-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
+
+#include "FSM.h"
+
+int main(void)
+{
+	CFSM myFSM;
+	
+	while (1)
+	{
+		myFSM.gpio.readInputs();
+		myFSM.runFSM();
+		myFSM.gpio.showCredit((int) myFSM.getState());
+		myFSM.gpio.writeOutputs();
+	}
+
+	return 0;
+}
+
+void GPIOISR(void)
+{
+    int aux;
+
+    aux = GPIOIntStatus(GPIO_PORTF_BASE, false);
+    switch (aux)
+    {
+//    case M025_IN:
+//        setInput(M025);
+//        break;
+    case M050_IN:
+        myFSM.gpio.setInput(M050);
+        break;
+//    case M100_IN:
+//        setInput(M100);
+//        break;
+    case MEET_IN:
+        setInput(MEET);
+        break;
+//    case ETIRPS_IN:
+//        setInput(ETIRPS);
+//        break;
+//    case DEV_IN:
+//        setInput(DEV);
+//        break;
+    default:
+        break;
+    }
+}
