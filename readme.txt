@@ -1,4 +1,8 @@
+-Project_CCS
+   Contains the files generated Code Composer Studio (CCS) IDE.
 -Project_MVS
-   Contém os arquivos gerados pela IDE Microsoft Visual Studio.
+   Contains the files generated Microsoft Visual Studio Initial (MVS) IDE.
+-teste_queue_MVS
+   Cotains a simple MVS project to test the queues.
 -src
-   Contém os arquivos fonte .cpp e .h
+   Contains the .cpp e .hpp e .h source files.
