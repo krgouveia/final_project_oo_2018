@@ -7,7 +7,12 @@
 #ifndef FSM_H
 #define FSM_H
 
+#ifdef ARM_PLATFORM
 #include "GPIO_UC.h"
+#endif
+#ifdef PC_PLATFORM
+#include "GPIO_PC.h"
+#endif
 
 typedef enum FSMstate {S000 = 0, S025, S050, S075, S100, S125, S150} FSMstate_t;
 
@@ -16,7 +21,7 @@ class CFSM {
 protected:
 	FSMstate_t state;
 public:
-	GPIO_UC gpio;
+	CGPIO gpio;
 public:
 	CFSM();
 	~CFSM();

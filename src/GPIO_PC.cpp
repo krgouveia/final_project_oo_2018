@@ -2,17 +2,17 @@
 #include <iostream>
 using namespace std;
 
-GPIO_PC::GPIO_PC()
+CGPIO::CGPIO()
 {
 
 }
 
-GPIO_PC::~GPIO_PC()
+CGPIO::~CGPIO()
 {
 
 }
 
-void GPIO_PC::readInputs()
+void CGPIO::readInputs()
 {
 	int aux;
 
@@ -51,7 +51,7 @@ void GPIO_PC::readInputs()
 	}
 }
 
-void GPIO_PC::writeOutputs()
+void CGPIO::writeOutputs()
 {
 	if (getOutput(M025))
 	{
@@ -84,7 +84,7 @@ void GPIO_PC::writeOutputs()
 	}
 }
 
-void GPIO_PC::showCredit(int credit)
+void CGPIO::showCredit(int credit)
 {
 	credit *= 25;
 	cout << "\nCredito: R$ " << credit / 100 << "," << credit % 100 << endl;

@@ -38,23 +38,23 @@
 #define MEET_OUT    GPIO_PIN_1 //LED_red
 #define ETIRPS_OUT  GPIO_PIN_2 //LED_blue
 
-/** \class GPIO_UC
-*	\brief uC's GPIO class implementation.
+/** \class CGPIO
+*	\brief uC's CGPIO class implementation.
 *	\details This class implements the methods to initialize and access the microcontroller's GPIO.
 */
 
-class GPIO_UC : public CIO {
+class CGPIO : public CIO {
 public:
-	GPIO_UC();
-	~GPIO_UC();
+	CGPIO();
+	~CGPIO();
 	void readInputs();
 	void writeOutputs();
 	void showCredit(int credit);
 	friend void GPIOISR();
 protected:
-	static GPIO_UC* current;
-	static GPIO_UC* getCurrent();
-	static void setCurrent(GPIO_UC* gpio);
+	static CGPIO* current;
+	static CGPIO* getCurrent();
+	static void setCurrent(CGPIO* gpio);
 };
-//extern "C" void called_from_interrupt();
+
 #endif

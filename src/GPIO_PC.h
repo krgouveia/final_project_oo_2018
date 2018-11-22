@@ -3,10 +3,10 @@
 
 #include "IO.h"
 
-class GPIO_PC : public CIO {
+class CGPIO : public CIO {
 public:
-	GPIO_PC();
-	~GPIO_PC();
+	CGPIO();
+	~CGPIO();
 	void readInputs();
 	void writeOutputs();
 	void showCredit(int credit);

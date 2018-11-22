@@ -16,13 +16,13 @@ using namespace std;
 
 void GPIOISR(void);
 /**
-*   \brief GPIO_UC constructor.
+*   \brief GPIO constructor.
 *   \param
 *   \return
 *
-*   This method create a GPIO_UC object instance.
+*   This method create a GPIO object instance.
 */
-GPIO_UC::GPIO_UC()
+CGPIO::CGPIO()
 {
     //--Clock
     // Setup the system clock to run at 80 Mhz from PLL with crystal reference
@@ -62,17 +62,17 @@ GPIO_UC::GPIO_UC()
     HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
 }
 
-GPIO_UC::~GPIO_UC()
+CGPIO::~CGPIO()
 {
 
 }
 
-void GPIO_UC::readInputs()
+void CGPIO::readInputs()
 {
 
 }
 
-void GPIO_UC::writeOutputs()
+void CGPIO::writeOutputs()
 {
 	if (getOutput(M025))
 	{
@@ -115,21 +115,21 @@ void GPIO_UC::writeOutputs()
 	}
 }
 
-void GPIO_UC::showCredit(int credit)
+void CGPIO::showCredit(int credit)
 {
 	credit *= 25;
 //	cout << "\nCredito: R$ " << credit / 100 << "," << credit % 100 << endl;
 }
 
-GPIO_UC* GPIO_UC::current = nullptr;
-GPIO_UC* GPIO_UC::getCurrent()
+CGPIO* CGPIO::current = nullptr;
+CGPIO* CGPIO::getCurrent()
 {
-    return GPIO_UC::current;
+    return CGPIO::current;
 }
 
-void GPIO_UC::setCurrent(GPIO_UC* gpio)
+void CGPIO::setCurrent(CGPIO* gpio)
 {
-    GPIO_UC::current = gpio;
+    CGPIO::current = gpio;
 }
 
 void GPIOISR(void)
@@ -145,14 +145,14 @@ void GPIOISR(void)
 //        setInput(M025);
 //        break;
     case M050_IN:
-        GPIO_UC::getCurrent()->setInput(M050);
+        CGPIO::getCurrent()->setInput(M050);
         GPIOIntClear(GPIO_PORTF_BASE, M050_IN);
         break;
 //    case M100_IN:
 //        setInput(M100);
 //        break;
     case MEET_IN:
-        GPIO_UC::getCurrent()->setInput(MEET);
+        CGPIO::getCurrent()->setInput(MEET);
         GPIOIntClear(GPIO_PORTF_BASE, MEET_IN);
         break;
 //    case ETIRPS_IN:
@@ -167,9 +167,4 @@ void GPIOISR(void)
     }
 }
 
-/*
-void called_from_interrupt()
-{
-    this->GPIOISR();
-}
-*/
+
