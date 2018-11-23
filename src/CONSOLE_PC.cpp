@@ -1,6 +1,8 @@
 
 #include "CONSOLE_PC.h"
 #include <iostream>
+#include <conio.h>
+
 
 using namespace std;
 
@@ -49,7 +51,13 @@ void CConsole::writeLogInteger(int num, bool newLine)
 	}
 }
 
-void CConsole::ReadCommand(string* str)
+bool CConsole::ReadCommand(char* com)
 {
-	cin >> *str;
+	if (_kbhit())
+	{
+		*com = _getch();
+		_getch();
+		return true; // Key Was Hit
+	}
+	return false; // No keys were pressed
 }

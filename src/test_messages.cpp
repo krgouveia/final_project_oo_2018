@@ -21,8 +21,8 @@
  ***************************************************************************/
 
 #include <string>
-#include <conio.h>
-#include <cstdlib>
+//#include <conio.h>
+//#include <cstdlib>
 
 #include "queue.hpp"
 #include "SCREEN_PC.h"
@@ -33,35 +33,30 @@ using namespace std;
 
 #define TIME_BTW_MSGS		2 //time between messages shown on display in seconds
 #define TIME_BTW_CK_DATE	1 //duration of data/time information shown on diaplay is seconds
-
-bool getInput(char *c);
-
-// get input from key board
-bool getInput(char *c)
-{
-	if (_kbhit())
-	{
-		*c = _getch();
-		_getch();
-		return true; // Key Was Hit
-	}
-	return false; // No keys were pressed
-}
+#define MSG_LENGHT_MAX		20 //Maximum message lenght
 
 int main(void)
 {
 	//auxilary variables
 	string auxS;
 	int auxI;
-	char key_pressed;
+	char auxC;
 	int i;
+
+	//display logic variables
 	long int last_time, actual_time;
 	int msgCounter = 3;
+	
+	//command logic variables
+	int CommandParserState = 0;
+	string newMessage;
+	int countCommmand;
 
 	//instantiating the queues
 	Cqueue<string>	fila_1, //advertising to be shown in display
 					fila_2, //new advertising stored
 					fila_3;	//advertising sent from the user 
+	Cqueue<char>	commandInputBuffer; //input buffer to receive commands from terminal
 
 	//instantiating the system real timer clock
 	CTime systemRTC;
@@ -144,19 +139,29 @@ int main(void)
 				}
 			}
 		}
-
-		//commands logic
-		if (getInput(&key_pressed))
+		
+		//enqueue commands received to be parsed
+		if (console.ReadCommand(&auxC))
 		{
-			//"insert" new message into fila_2
-			if (key_pressed == 'n')
+			commandInputBuffer.pushBack(auxC);
+		}
+
+		//commands parser logic
+		switch (CommandParserState)
+		{
+		case 0: //wait command
+			if (commandInputBuffer.getSize() >= 2)
 			{
-				//log action
-				console.writeLogString("New message received", true);				fila_2.pushBack(fila_3.popFront());
+				if (commandInputBuffer.popFront() == '=')
+				{
+					CommandParserState = 1;
+				}
 			}
-			//transfer messages from fila_2 to fila_1
-			if ((key_pressed == 't'))
+			break;
+		case 1: //popQueue and select the command
+			switch (commandInputBuffer.popFront())
 			{
+			case 't': //transfer messages from fila_2 to fila_1
 				auxI = fila_2.getSize();
 				if (auxI > 0)
 				{
@@ -168,17 +173,16 @@ int main(void)
 						//log action
 						console.writeLogString("1 message transfered to queue 2", true);
 					}
-				}	
+				}
 				else
 				{
 					//log action
 					console.writeLogString("[log] Queue 2 empty", true);
 				}
-			}
+				CommandParserState = 0;
+				break;
 
-			//remove last message shown on display from fila_1
-			if ((key_pressed == 'r'))
-			{
+			case 'r': //remove last message shown on display from fila_1
 				auxI = fila_1.getSize();
 				if (auxI > 0)
 				{
@@ -195,7 +199,47 @@ int main(void)
 					//log action
 					console.writeLogString("Queue 1 empty", true);
 				}
+				CommandParserState = 0;
+				break;
+
+			case'n': //"insert" new message into fila_2
+							//log action
+				console.writeLogString("New message received", true);
+				//fila_2.pushBack(fila_3.popFront());
+				newMessage = "";
+				countCommmand = 0;
+				CommandParserState = 2;
+				break;
+
+			default:
+				CommandParserState = 0;
+				break;
+
 			}
+			break;
+		case 2: //receive new message
+			if (commandInputBuffer.getSize() >= 1)
+			{	
+				if (countCommmand >= MSG_LENGHT_MAX) CommandParserState = 0;
+				else
+				{
+					auxC = commandInputBuffer.popFront();
+					if (auxC == ';')
+					{
+						fila_2.pushBack(newMessage);
+						CommandParserState = 0;
+					}
+					else
+					{
+						newMessage += auxC;
+						countCommmand++;
+					}
+				}
+			}
+			break;
+
+		default:
+			break;
 		}
 	}
 }

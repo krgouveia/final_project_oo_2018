@@ -14,7 +14,7 @@ public:
 	~CConsole();
 	void writeLogString(string str, bool newLine);
 	void writeLogInteger(int num, bool newLine); 
-	void ReadCommand(string* str); 
+	bool ReadCommand(char* com); 
 };
 
 #endif
