@@ -8,7 +8,11 @@
  *
  * Module Name:  test_messages.cpp
  *
- * \brief Main program to test the messages according the project's requirements.
+ * \brief Main program to test the display messages and terminal fuctions
+ * according to the project's requirements. How both modules share the same
+ * PC screen output via std::cout, each module use a tag to identify the 
+ * source of the message. The tags are [LCD] and [LOG] for Display and 
+ * Terminal, respectivelly.
  *
  * \section References
  *
@@ -21,9 +25,6 @@
  ***************************************************************************/
 
 #include <string>
-//#include <conio.h>
-//#include <cstdlib>
-
 #include "queue.hpp"
 #include "SCREEN_PC.h"
 #include "CONSOLE_PC.h"
@@ -31,9 +32,9 @@
 
 using namespace std;
 
-#define TIME_BTW_MSGS		2 //time between messages shown on display in seconds
-#define TIME_BTW_CK_DATE	1 //duration of data/time information shown on diaplay is seconds
-#define MSG_LENGHT_MAX		20 //Maximum message lenght
+#define TIME_BTW_MSGS		2000 //time between messages shown on display in miliseconds
+#define TIME_BTW_CK_DATE	1000 //duration of data/time information shown on diaplay is miliseconds
+#define MSG_LENGHT_MAX		20 //maximum message lenght to be shown in display
 
 int main(void)
 {
@@ -54,8 +55,7 @@ int main(void)
 
 	//instantiating the queues
 	Cqueue<string>	fila_1, //advertising to be shown in display
-					fila_2, //new advertising stored
-					fila_3;	//advertising sent from the user 
+					fila_2; //new advertising received
 	Cqueue<char>	commandInputBuffer; //input buffer to receive commands from terminal
 
 	//instantiating the system real timer clock
@@ -66,25 +66,6 @@ int main(void)
 
 	//instantiating the LCD
 	CLCD LCD;
-
-//lets suppose that the user can send commands containing new messages 
-//to be shown in display. These commands feed the display's process
-//throgh the queue "fila_2". For simplicity, we don't want to implement
-//the "command's parser" module, then we will use the "fila_3" to simulate
-//the commands sent from the user to add a message into "fila_2" using 
-//the code lines below.
-
-	//filling fila_3
-	fila_3.pushBack("MSG 1");
-	fila_3.pushBack("MSG 2");
-	fila_3.pushBack("MSG 3");
-	fila_3.pushBack("MSG 4");
-	fila_3.pushBack("MSG 5");
-	fila_3.pushBack("MSG 6");
-	fila_3.pushBack("MSG 7");
-	fila_3.pushBack("MSG 8");
-	fila_3.pushBack("MSG 9");
-	fila_3.pushBack("MSG 10");
 
 	//get a timestamp;
 	last_time = systemRTC.getSystemClock();
@@ -203,9 +184,6 @@ int main(void)
 				break;
 
 			case'n': //"insert" new message into fila_2
-							//log action
-				console.writeLogString("New message received", true);
-				//fila_2.pushBack(fila_3.popFront());
 				newMessage = "";
 				countCommmand = 0;
 				CommandParserState = 2;
@@ -227,6 +205,8 @@ int main(void)
 					if (auxC == ';')
 					{
 						fila_2.pushBack(newMessage);
+						//log action
+						console.writeLogString("New message received", true);
 						CommandParserState = 0;
 					}
 					else
