@@ -14,8 +14,10 @@
 #include "GPIO_PC.h"
 #endif
 
-typedef enum FSMstate {S000 = 0, S025, S050, S075, S100, S125, S150} FSMstate_t;
+#include <string>
+using namespace std;
 
+typedef enum FSMstate {S000 = 0, S025, S050, S075, S100, S125, S150} FSMstate_t;
 
 class CFSM {
 protected:
@@ -27,7 +29,7 @@ public:
 	~CFSM();
 	void changeState(FSMstate_t newState);
 	FSMstate_t getState();
-	void runFSM();
+	void runFSM(Cqueue<string>* queueP);
 };
 
 #endif

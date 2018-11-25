@@ -1,5 +1,6 @@
 #include "GPIO_PC.h"
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 CGPIO::CGPIO()
@@ -12,74 +13,110 @@ CGPIO::~CGPIO()
 
 }
 
-void CGPIO::readInputs()
+void CGPIO::readInputs(Cqueue<string>* queueP)
 {
-	int aux;
+	int aux[2];
+	string auxS;
 
-	cout << endl;
-	cout << "1 - M025" << endl;
-	cout << "2 - M050" << endl;
-	cout << "3 - M100" << endl;
-	cout << "4 - MEET" << endl;
-	cout << "5 - ETIRPS" << endl;
-	cout << "6 - DEV" << endl;
-	cout << "Aguardando entrada: ";
-	cin >> aux;
-		
-	switch (aux)
+	if (_kbhit())
 	{
-		case 1:
-			setInput(M025);
-			break;
-		case 2:
-			setInput(M050);
-			break;
-		case 3:
-			setInput(M100);
-			break;
-		case 4:
-			setInput(MEET);
-			break;
-		case 5:
-			setInput(ETIRPS);
-			break;
-		case 6:
-			setInput(DEV);
-			break;
-		default:
-			break;
+		aux[0] = _getch();
+		aux[1] = _getch();
+
+		if (aux[0] == 0)
+		{
+			switch (aux[1])
+			{
+			case 59: //F1
+				setInput(M025);
+				auxS = "R$ 0,25 recebido.";
+				queueP->pushBack(auxS);
+				break;
+			case 60: //F2
+				setInput(M050);
+				auxS = "R$ 0,50 recebido.";
+				queueP->pushBack(auxS);
+				break;
+			case 61: //F3
+				setInput(M100);
+				auxS = "R$ 1,00 recebido.";
+				queueP->pushBack(auxS);
+				break;
+			case 62: //F4
+				setInput(MEET);
+				auxS = "MEET solicitado.";
+				queueP->pushBack(auxS);
+				break;
+			case 63: //F5
+				setInput(ETIRPS);
+				auxS = "ETIRPS solicitado.";
+				queueP->pushBack(auxS);
+				break;
+			case 64: //F6
+				setInput(DEV);
+				auxS = "Devolucao do dinheiro solicitado.";
+				queueP->pushBack(auxS);
+				break;
+			default:
+				break;
+			}
+		}
+		else
+		{
+			_ungetch(aux[0]);
+			_ungetch(aux[1]);
+		}
 	}
+	else
+	{
+		aux[1] = 0;
+		aux[0] = 0;
+	}
+
+
 }
 
-void CGPIO::writeOutputs()
+void CGPIO::writeOutputs(Cqueue<string>* queueP)
 {
+	string auxS;
+
 	if (getOutput(M025))
 	{
-		cout << "\nR$ 0,25 devolvido!" << endl;
+		//cout << "\nR$ 0,25 devolvido!" << endl;
+		auxS = "R$0,25 devolvido.";
+		queueP->pushBack(auxS);
 		clearOutput(M025);
 	}
 
 	if (getOutput(M050))
 	{
-		cout << "\nR$ 0,50 devolvido!" << endl;
+		//cout << "\nR$ 0,50 devolvido!" << endl;
+		auxS = "R$0,50 devolvido.";
+		queueP->pushBack(auxS);
 		clearOutput(M050);
 	}
 
 	if (getOutput(M100))
 	{
-		cout << "\nR$ 1,00 devolvido!" << endl;
+		//cout << "\nR$ 1,00 devolvido!" << endl;
+		auxS = "R$1,00 devolvido.";
+		queueP->pushBack(auxS);
 		clearOutput(M100);
 	}
 
 	if (getOutput(MEET))
 	{
-		cout << "\nMEET liberado!" << endl;
+		//cout << "\nMEET liberado!" << endl;
+		auxS = "MEET liberado.";
+		queueP->pushBack(auxS);
 		clearOutput(MEET);
 	}
 
 	if (getOutput(ETIRPS))
 	{
-		cout << "\nETIRPS liberado!" << endl;
+		//cout << "\nETIRPS liberado!" << endl;
+		auxS = "ETIRPS liberado.";
+		queueP->pushBack(auxS);
 		clearOutput(ETIRPS);
 	}
 }

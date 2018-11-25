@@ -20,18 +20,24 @@
  *
  ***************************************************************************/
 
+#include "CONTROL.h"
 #include "FSM.h"
 
 int main(void)
 {
+	CControl myControl;
 	CFSM myFSM;
 	
 	while (1)
 	{
-		myFSM.gpio.readInputs();
-		myFSM.runFSM();
-		myFSM.gpio.showCredit((int) myFSM.getState());
-		myFSM.gpio.writeOutputs();
+		myFSM.gpio.readInputs(&myControl.fila_3);
+		myFSM.runFSM(&myControl.fila_3);
+//		myFSM.gpio.showCredit((int) myFSM.getState());
+		myFSM.gpio.writeOutputs(&myControl.fila_3);
+
+		myControl.messageManager();
+		myControl.receiveCommand();
+		myControl.commandsParser();
 	}
 
 	return 0;

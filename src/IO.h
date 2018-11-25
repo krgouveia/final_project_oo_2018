@@ -4,6 +4,10 @@
  *  \author     Kleber Gouveia
  */
 
+#include <string>
+#include "queue.hpp"
+using namespace std;
+
 #ifndef IO_H
 #define IO_H
 
@@ -27,8 +31,8 @@ public:
 	void setOutput(int flag);
 	void clearOutput(int flag);
 	bool getOutput(int flag);
-	virtual void readInputs() = 0;
-	virtual void writeOutputs() = 0;
+	virtual void readInputs(Cqueue<string>* queueP) = 0;
+	virtual void writeOutputs(Cqueue<string>* queueP) = 0;
 	virtual void showCredit(int credit) = 0;
 };
 

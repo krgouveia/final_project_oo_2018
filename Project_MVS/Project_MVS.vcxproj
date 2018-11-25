@@ -116,15 +116,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\CONSOLE_PC.cpp" />
+    <ClCompile Include="..\src\CONTROL.cpp" />
+    <ClCompile Include="..\src\DATE_TIME.cpp" />
+    <ClCompile Include="..\src\DISPLAY.cpp" />
     <ClCompile Include="..\src\FSM.cpp" />
     <ClCompile Include="..\src\GPIO_PC.cpp" />
     <ClCompile Include="..\src\IO.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\SCREEN_PC.cpp" />
+    <ClCompile Include="..\src\TERMINAL.cpp" />
+    <ClCompile Include="..\src\TIME_PC.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\CONSOLE_PC.h" />
+    <ClInclude Include="..\src\CONTROL.h" />
+    <ClInclude Include="..\src\DATE_TIME.h" />
+    <ClInclude Include="..\src\DISPLAY.h" />
     <ClInclude Include="..\src\FSM.h" />
     <ClInclude Include="..\src\GPIO_PC.h" />
     <ClInclude Include="..\src\IO.h" />
+    <ClInclude Include="..\src\node.hpp" />
+    <ClInclude Include="..\src\queue.hpp" />
+    <ClInclude Include="..\src\SCREEN_PC.h" />
+    <ClInclude Include="..\src\TERMINAL.h" />
+    <ClInclude Include="..\src\TIME_PC.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
