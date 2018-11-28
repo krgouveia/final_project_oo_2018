@@ -26,6 +26,36 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/CONTROL.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/CONTROL.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/CONTROL.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/CONTROL.h</locationURI>
+		</link>
+		<link>
+			<name>src/DATE_TIME.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/DATE_TIME.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/DATE_TIME.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/DATE_TIME.h</locationURI>
+		</link>
+		<link>
+			<name>src/DISPLAY.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/DISPLAY.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/DISPLAY.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/DISPLAY.h</locationURI>
+		</link>
+		<link>
 			<name>src/FSM.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/src/FSM.cpp</locationURI>
@@ -56,9 +86,59 @@
 			<locationURI>PARENT-2-PROJECT_LOC/src/IO.h</locationURI>
 		</link>
 		<link>
+			<name>src/LCD_NHDC12864.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/LCD_NHDC12864.c</locationURI>
+		</link>
+		<link>
+			<name>src/LCD_NHDC12864.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/LCD_NHDC12864.h</locationURI>
+		</link>
+		<link>
+			<name>src/LCD_UC.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/LCD_UC.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/LCD_UC.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/LCD_UC.h</locationURI>
+		</link>
+		<link>
+			<name>src/RTC_UC.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/RTC_UC.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/RTC_UC.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/RTC_UC.h</locationURI>
+		</link>
+		<link>
+			<name>src/TERMINAL.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/TERMINAL.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/TERMINAL.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/TERMINAL.h</locationURI>
+		</link>
+		<link>
 			<name>src/main.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/src/main.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/node.hpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/node.hpp</locationURI>
+		</link>
+		<link>
+			<name>src/queue.hpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/queue.hpp</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

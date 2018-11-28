@@ -19,7 +19,6 @@
  * * Working baseline.
  *
  ***************************************************************************/
-
 #include "CONTROL.h"
 #include "FSM.h"
 
@@ -32,7 +31,6 @@ int main(void)
 	{
 		myFSM.gpio.readInputs(&myControl.fila_3);
 		myFSM.runFSM(&myControl.fila_3);
-//		myFSM.gpio.showCredit((int) myFSM.getState());
 		myFSM.gpio.writeOutputs(&myControl.fila_3);
 
 		myControl.messageManager();

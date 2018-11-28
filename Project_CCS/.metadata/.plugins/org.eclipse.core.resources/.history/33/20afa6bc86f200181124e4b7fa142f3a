@@ -1,0 +1,20 @@
+
+#ifndef DISPLAY_H
+#define DISPLAY_H
+
+#include <string>
+using namespace std;
+
+class CDisplay {
+protected:
+
+public:
+	CDisplay();
+	~CDisplay();
+	virtual void clearScreen() = 0;
+	virtual void writeString(string const& str) = 0;
+	virtual void writeInteger(int num) = 0;
+	virtual void setPosition(int x, int y) = 0;
+};
+
+#endif

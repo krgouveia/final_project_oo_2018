@@ -1,0 +1,83 @@
+
+#include "TIME_UC.h"
+#include"driverlib\hibernate.h"
+
+CTime::CTime()
+{
+	systemClock = 0;
+	// Enable the Hibernation module.
+
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_HIBERNATE);
+	// Wait for the Hibernate module to be ready.
+	while(!SysCtlPeripheralReady(SYSCTL_PERIPH_HIBERNATE)){}
+	HibernateEnableExpClk(SysCtlClockGet());
+	// Wait an amount of time for the module to power up.
+	// Configure the clock source for Hibernation module and enable the RTC feature.
+	HibernateClockConfig(HIBERNATE_OSC_LOWDRIVE);
+	HibernateRTCEnable();
+	// Set the RTC to an initial value.
+	HibernateRTCSet(0);
+	// Set Match 0 for 30 seconds from now.
+	HibernateRTCMatchSet(0, HibernateRTCGet() + 30);
+	// Set up interrupts on the Hibernation module to enable the RTC match
+	// 0 interrupt. Clear all pending interrupts and register the
+	// interrupt handler.
+	HibernateIntEnable(HIBERNATE_INT_RTC_MATCH_0);
+	HibernateIntClear(HIBERNATE_INT_PIN_WAKE | HIBERNATE_INT_LOW_BAT |
+	HIBERNATE_INT_RTC_MATCH_0);
+	HibernateIntRegister(HibernateHandler);
+	// Hibernate handler (above) is invoked in 30 seconds.
+}
+
+CTime::CTime(long int sck) : CDateTime(sck)
+{
+
+}
+
+CTime::~CTime()
+{
+
+}
+
+void CTime::setSystemClock(long int sck)
+{
+	systemClock = sck;
+}
+
+long int CTime::getSystemClock()
+{
+	return systemClock;
+}
+
+string CTime::getSystemClockString()
+{
+/*	time_t auxTime;
+	char auxS[30];
+	int auxI = 0;
+
+	time(&auxTime);
+	ctime_s(auxS, 30, &auxTime);
+	for (auxI = 0; (auxS[auxI] != '\n') || (auxI >= 30); auxI++);
+	auxS[auxI] = ' ';
+	
+	string str(auxS);
+	
+	return str;
+*/
+}
+//
+// Handler for hibernate interrupts.
+//
+void HibernateHandler(void)
+{
+	uint32_t ui32Status;
+	// Get the interrupt status and clear any pending interrupts.
+	ui32Status = HibernateIntStatus(1);
+	HibernateIntClear(ui32Status);
+	// Process the RTC match 0 interrupt.
+	if(ui32Status & HIBERNATE_INT_RTC_MATCH_0)
+	{
+	// RTC match 0 interrupt actions go here.
+	}
+}
+

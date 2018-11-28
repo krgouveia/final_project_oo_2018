@@ -1,0 +1,189 @@
+/*!
+ *  \file 		LCD_NHDC12864.c
+ *  \brief		Implementação do driver para o display LCD NHDC1264.
+ *  \author		Kleber Reis Gouveia Júnior
+ */
+
+//Includes
+#include "LCD_NHDC12864.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include <stdint.h>
+#include "inc/hw_memmap.h"
+
+//Variaveis globais internas
+char lcdConfigVector[COMP_LCD_CONFIG_VECTOR]={LCD_BIAS_1_9,         /*!<Sets the LCD drive voltage bias ratio: 1/9 bias			*/
+		LCD_RAM_SEG_NORMAL,   /*!<Sets the LCD RAM adress SEG output corresp: normal      */
+		LCD_COM_OUT_REVERSE,  /*!<Select COM output scan direction: reverse               */
+		LCD_ALL_POINTS_OFF,   /*!<Display all points: all points off                      */
+		LCD_RAM_LINE|0x00,    /*!<Sets the LCD RAM start line address: 000000             */
+		LCD_RES_RATIO|0x05,   /*!<Select Internal resistor ratio: 000                     */
+		LCD_VOL_MODE,         /*!<Set the Vo output voltage electronic volume register    */
+		LCD_VOL_REG|0x10,     /*!<Set electronic volume register                          */
+		LCD_PWR_CRT|0x07,     /*!<Select internal power supply operating mode: 111        */
+		LCD_NORMAL,           /*!<                                                        */
+		LCD_ON};              /*!<LCD display ON/OFF: ON                                  */
+
+//Corpo das funcoes definidas no .h
+
+/**
+ * Implementação da inicialização do LCD.
+ * São carregados os comandos de controle armazenados em lcdConfigVector[].
+ */
+void LCDInitializeNHDC12864(void)
+{
+	char i=0;
+//	BitSet(P1OUT, LCD_RD);
+	for(i=0;i<COMP_LCD_CONFIG_VECTOR;i++)
+	{
+		LCDWrite(COMM,lcdConfigVector[i]);
+		//DelayUs(5);
+		SysCtlDelay(30);
+	}
+	LCDClear();
+}
+
+/**
+ * Envia para o LCD um comando (mode=COMM) ou dado (mode=DATA) para o LCD.
+ * @param mode Seleção do modo de envio: comando (COMM) ou dado (DATA).
+ * @param data Valor enviado.
+ */
+void LCDWrite(char mode, char data)
+{
+	if(mode==DATA)
+	{
+		//BitSet(P1OUT, LCD_A0);
+		GPIOPinWrite(GPIO_PORTB_BASE, LCD_A0|LCD_RD, LCD_A0|LCD_RD);
+		//LCD_DATA = data;
+		GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7, data);
+		GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_2, data);
+		GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_0, data);
+		//BitClear(P1OUT, LCD_WR);
+		GPIOPinWrite(GPIO_PORTE_BASE, LCD_WR, 0);
+		//DelayUs(5);
+		SysCtlDelay(30);
+		//BitSet(P1OUT, LCD_WR);
+		GPIOPinWrite(GPIO_PORTE_BASE, LCD_WR, LCD_WR);
+	}else //mode==COMM
+	{
+		//BitClear(P1OUT, LCD_A0);
+		GPIOPinWrite(GPIO_PORTB_BASE, LCD_RD, LCD_RD);
+		//LCD_DATA = data;
+		GPIOPinWrite(GPIO_PORTA_BASE, GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7, data);
+		GPIOPinWrite(GPIO_PORTB_BASE, GPIO_PIN_2, data);
+		GPIOPinWrite(GPIO_PORTE_BASE, GPIO_PIN_0, data);
+		//BitClear(P1OUT, LCD_WR);
+		GPIOPinWrite(GPIO_PORTE_BASE, LCD_WR, 0);
+		//DelayUs(5);
+		SysCtlDelay(30);
+		//BitSet(P1OUT, LCD_WR);
+		GPIOPinWrite(GPIO_PORTE_BASE, LCD_WR, LCD_WR);
+	}
+}
+
+
+/**
+ * Lê do LCD um status (mode=STATUS) ou dado (mode=DATA).
+ * @param mode Seleção do modo de leitura: status (STATUS) ou dado (DATA).
+ * @return Valor lido do LCD.
+ */
+/*
+ unsigned char LCDRead(char mode)
+{
+	unsigned char data = 0;
+
+	P2DIR = 0x00;
+
+	if(mode==DATA)
+	{
+		BitSet(P1OUT, LCD_A0);
+		BitClear(P1OUT, LCD_RD);
+		DelayUs(5);
+		BitSet(P1OUT,LCD_RD);
+		BitClear(P1OUT, LCD_RD);
+		DelayUs(5);
+		data = P2IN;
+		BitSet(P1OUT,LCD_RD);
+	}
+	if(mode==STATUS)
+	{
+		BitClear(P1OUT, LCD_A0);
+		BitClear(P1OUT, LCD_RD);
+		DelayUs(5);
+		BitSet(P1OUT,LCD_RD);
+		BitClear(P1OUT, LCD_RD);
+		DelayUs(5);
+		data = P2IN;
+		BitSet(P1OUT,LCD_RD);
+	}
+
+	P2DIR=0xFF;
+	return data;
+}
+*/
+
+/**
+ * Define a linha inicial do LCD.
+ */
+void LCDSetStartLine(char addr)
+{
+	LCDWrite(COMM,(LCD_RAM_LINE|(addr&0x3F)));
+}
+
+/**
+ * 	Seleciona o endereço da coluna do LCD a ser acessada.
+ */
+void LCDSetColumn(char addr)
+{
+	LCDWrite(COMM,(LCD_RAM_COL_H|((addr&0xF0)>>4)));
+	LCDWrite(COMM,(LCD_RAM_COL_L|(addr&0x0F)));
+}
+
+/**
+ * 	Seleciona o endereço da página do LCD a ser acessada.
+ */
+void LCDSetPage(char addr)
+{
+	LCDWrite(COMM,(LCD_RAM_PAGE|(addr&0x0F)));
+}
+
+/**
+ * Apaga o LCD.
+ */
+void LCDClear(void)
+{
+	char i=0,j=0;
+
+	LCDSetColumn(0);
+	LCDSetPage(0);
+
+	for(j=0;j<=MAX_PAGE;j++)
+	{
+		LCDSetPage(j);
+		LCDSetColumn(0);
+
+		for(i=0;i<=MAX_COL;i++)
+		{
+			LCDWrite(DATA,0x00);
+		}
+	}
+}
+
+/**
+ * Faz o LCD piscar por um número de vezes (nBlink) invertendo suas cores.
+ * @param nBlink Número de vezes que o Display deve piscar.
+ */
+void LCDReverseBlink(char nBlink)
+{
+	char i;
+	for(i=0;i<nBlink;i++)
+	{
+		LCDWrite(COMM,LCD_REVERSE);
+		//DelayMs(150);
+		SysCtlDelay(800000);
+		LCDWrite(COMM,LCD_NORMAL);
+		//DelayMs(150);
+		SysCtlDelay(800000);
+	}
+}
+

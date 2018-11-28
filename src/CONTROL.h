@@ -1,11 +1,19 @@
 #ifndef CONTROL_H
 #define CONTROL_H
 
-#include <string>
 #include "queue.hpp"
+
+
+#ifdef ARM_PLATFORM
+#include "LCD_UC.h"
+//#include "CONSOLE_UC.h"
+#include "RTC_UC.h"
+#endif
+#ifdef PC_PLATFORM
 #include "SCREEN_PC.h"
 #include "CONSOLE_PC.h"
 #include "TIME_PC.h"
+#endif
 
 #define TIME_DURATION_AD_MSG	3000 //duration of advertising messages shown on diaplay is miliseconds
 #define TIME_DURATION_DATE_MSG	2000 //duration of data/time information shown on diaplay is miliseconds
@@ -28,7 +36,7 @@ protected:
 	////instantiating the system real timer clock
 	CTime systemRTC;
 	//instantiating the console
-	CConsole console;
+//	CConsole console;
 	//instantiating the LCD
 	CLCD LCD;
 	

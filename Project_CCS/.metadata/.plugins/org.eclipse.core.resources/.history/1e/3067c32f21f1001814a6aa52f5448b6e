@@ -1,0 +1,31 @@
+/*!
+ *  \file 		graphics.h
+ *  \brief		Implementação dos artifícios gráficos tais como fontes e imagens utilizadas no projeto.
+ *  \author		Kleber Reis Gouveia Júnior
+ */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
+
+#include "LCD_NHDC12864.h"
+
+//Defines
+#define COMP_LCD_MIRROR 16*64		/*!< Quantidade de bytes para armazenar todos os pixels do LCD.*/
+
+/*! Variáveis Externadas*/
+
+extern const char times8[95*7];
+
+//Protótipos das funções
+void LCDWriteChar7x8(const char *alphabet, char letter);
+void LCDWriteString(const char *alphabet, unsigned char *string);
+void LCDRefreshMatrix(const char* matrix);
+
+#endif
+
+#ifdef __cplusplus
+}
+#endif

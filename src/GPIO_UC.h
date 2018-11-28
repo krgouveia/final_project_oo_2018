@@ -47,8 +47,8 @@ class CGPIO : public CIO {
 public:
 	CGPIO();
 	~CGPIO();
-	void readInputs();
-	void writeOutputs();
+	void readInputs(Cqueue<string>* queueP);
+	void writeOutputs(Cqueue<string>* queueP);
 	void showCredit(int credit);
 	friend void GPIOISR();
 protected:

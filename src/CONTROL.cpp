@@ -1,6 +1,8 @@
 #include"CONTROL.h"
+#include <string>
+using namespace std;
 
-CControl::CControl() : console(&systemRTC)
+CControl::CControl()// : console(&systemRTC)
 {
 	//console(&systemRTC);
 	msgCounter = 3;
@@ -45,8 +47,8 @@ void CControl::messageManager(void)
 				//defines new random interval to show date/time information again
 				msgCounter = rand() % 3 + 3;
 				//log action
-				console.writeLogString("New msgCounter value defined:", true);
-				console.writeLogInteger(msgCounter, true);
+//				console.writeLogString("New msgCounter value defined:", true);
+//				console.writeLogInteger(msgCounter, true);
 
 				//print date/time
 				LCD.writeString(systemRTC.getSystemClockString());
@@ -63,6 +65,7 @@ void CControl::messageManager(void)
 				//print message on display
 				if (fila_1.checkEmpty())
 				{
+				    int auxI;
 					//there is no messages stored to display
 					LCD.writeString("No messages to display");
 				}
@@ -81,17 +84,17 @@ void CControl::messageManager(void)
 }
 
 void CControl::receiveCommand(void)
-{
+{/*
 	char auxC;
 	//enqueue commands received to be parsed
 	if (console.ReadCommand(&auxC))
 	{
 		commandInputBuffer.pushBack(auxC);
-	}
+	}*/
 }
 
 void CControl::commandsParser(void)
-{
+{/*
 	char auxC;
 	int auxI, i;
 
@@ -198,5 +201,5 @@ void CControl::commandsParser(void)
 
 		default:
 			break;
-		}
+		}*/
 	}

@@ -5,8 +5,8 @@
  */
 
 #include "GPIO_UC.h"
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 
 #include "driverlib/gpio.h"
 #include "driverlib/sysctl.h"
@@ -15,6 +15,7 @@ using namespace std;
 #include "inc/hw_types.h"
 
 void GPIOISR(void);
+
 /**
 *   \brief GPIO constructor.
 *   \param
@@ -67,12 +68,12 @@ CGPIO::~CGPIO()
 
 }
 
-void CGPIO::readInputs()
+void CGPIO::readInputs(Cqueue<string>* queueP)
 {
 
 }
 
-void CGPIO::writeOutputs()
+void CGPIO::writeOutputs(Cqueue<string>* queueP)
 {
 	if (getOutput(M025))
 	{
