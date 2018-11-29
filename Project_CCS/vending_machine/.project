@@ -126,6 +126,16 @@
 			<locationURI>PARENT-2-PROJECT_LOC/src/TERMINAL.h</locationURI>
 		</link>
 		<link>
+			<name>src/UART_UC.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/UART_UC.cpp</locationURI>
+		</link>
+		<link>
+			<name>src/UART_UC.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/src/UART_UC.h</locationURI>
+		</link>
+		<link>
 			<name>src/main.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/src/main.cpp</locationURI>
@@ -139,6 +149,16 @@
 			<name>src/queue.hpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/src/queue.hpp</locationURI>
+		</link>
+		<link>
+			<name>src/uartstdio.c</name>
+			<type>1</type>
+			<locationURI>PARENT-10-PROJECT_LOC/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c</locationURI>
+		</link>
+		<link>
+			<name>src/uartstdio.h</name>
+			<type>1</type>
+			<locationURI>PARENT-10-PROJECT_LOC/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

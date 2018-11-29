@@ -3,10 +3,9 @@
 
 #include "queue.hpp"
 
-
 #ifdef ARM_PLATFORM
 #include "LCD_UC.h"
-//#include "CONSOLE_UC.h"
+#include "UART_UC.h"
 #include "RTC_UC.h"
 #endif
 #ifdef PC_PLATFORM
@@ -36,7 +35,7 @@ protected:
 	////instantiating the system real timer clock
 	CTime systemRTC;
 	//instantiating the console
-//	CConsole console;
+	CConsole console;
 	//instantiating the LCD
 	CLCD LCD;
 	

@@ -11355,3 +11355,765 @@ Finished building target: "vending_machine.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 13: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 17: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 43: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 47: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 76: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 77: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 82: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 90: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 90: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 96: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 102: warning #179-D: variable "aux" was declared but never referenced
+33 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:9: recipe for target 'src/CONTROL.obj' failed
+"C:\Users\User\Dropbox\UFSC\2018.2\OO\Projeto_Final\fw\src\CONTROL.h", line 39: error #20: identifier "CConsole" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp", line 68: warning #179-D: variable "auxI" was declared but never referenced
+1 error detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp".
+gmake: *** [src/CONTROL.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/main.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:86: recipe for target 'src/main.obj' failed
+"C:\Users\User\Dropbox\UFSC\2018.2\OO\Projeto_Final\fw\src\CONTROL.h", line 39: error #20: identifier "CConsole" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp", line 41: warning #112-D: statement is unreachable
+1 error detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp".
+gmake: *** [src/main.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/RTC_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 13: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 17: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 43: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 47: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 76: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 77: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 82: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 90: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 90: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #66: expected a ";"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 96: error #20: identifier "cout" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 102: warning #179-D: variable "aux" was declared but never referenced
+33 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/main.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp", line 41: warning #112-D: statement is unreachable
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp", line 68: warning #179-D: variable "auxI" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 13: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 17: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 43: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 47: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 76: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 77: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #18: expected a ")"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 82: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 102: warning #179-D: variable "aux" was declared but never referenced
+27 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 10: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 13: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 16: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 17: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 18: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SYSCTL_PERIPH_GPIOA" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 40: error #20: identifier "SysCtlPeripheralEnable" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 43: error #20: identifier "SYSCTL_PERIPH_UART0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 46: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 47: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PORTA_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 48: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "UART0_BASE" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 76: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 77: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 82: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 95: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 102: warning #179-D: variable "aux" was declared but never referenced
+28 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 19: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 19: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 20: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 49: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 49: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 50: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 79: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 80: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 84: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 84: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 85: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 98: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 105: warning #179-D: variable "aux" was declared but never referenced
+18 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 19: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 19: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 20: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 21: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 49: error #20: identifier "GPIO_PA0_U0RX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 49: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 50: error #20: identifier "GPIO_PA1_U0TX" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 51: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 79: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 80: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 84: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 84: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 85: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 98: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 105: warning #179-D: variable "aux" was declared but never referenced
+18 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 20: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 22: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 22: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 22: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 50: error #20: identifier "GPIOPinConfigure" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 52: error #20: identifier "GPIO_PIN_0" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 52: error #20: identifier "GPIO_PIN_1" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 52: error #20: identifier "GPIOPinTypeUART" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 80: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 85: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 85: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 86: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 99: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 106: warning #179-D: variable "aux" was declared but never referenced
+14 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 81: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 82: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 86: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 86: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 87: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 100: error #302: a pointer to a bound function may only be used to call the function
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+6 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 100: error #2409: expression must have integral or unscoped enum type
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 100: error #2409: expression must have integral or unscoped enum type
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+2 errors detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined       first referenced 
+  symbol             in file      
+ ---------       ---------------- 
+ UARTStdioConfig ./src/UART_UC.obj
+ UARTprintf      ./src/UART_UC.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "vending_machine.out" not built
+ 
+>> Compilation failure
+makefile:156: recipe for target 'vending_machine.out' failed
+gmake[1]: *** [vending_machine.out] Error 1
+makefile:152: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/uartstdio.d_raw" --obj_directory="src"  "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Finished building: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'vending_machine.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/DATE_TIME.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/DISPLAY.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/FSM.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp", line 68: warning #179-D: variable "auxI" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/LCD_NHDC12864.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/IO.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/LCD_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/RTC_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+ 
+Building file: "../src/tm4c123gh6pm_startup_ccs.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/tm4c123gh6pm_startup_ccs.d_raw" --obj_directory="src"  "../src/tm4c123gh6pm_startup_ccs.c"
+Finished building: "../src/tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/main.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp", line 41: warning #112-D: statement is unreachable
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/TERMINAL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+ 
+Building file: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/uartstdio.d_raw" --obj_directory="src"  "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Finished building: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/DATE_TIME.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/DISPLAY.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DISPLAY.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/FSM.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/FSM.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/LCD_NHDC12864.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_NHDC12864.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/IO.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/IO.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/LCD_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/LCD_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/RTC_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/TERMINAL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 107: warning #179-D: variable "aux" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building file: "../src/tm4c123gh6pm_startup_ccs.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/tm4c123gh6pm_startup_ccs.d_raw" --obj_directory="src"  "../src/tm4c123gh6pm_startup_ccs.c"
+Finished building: "../src/tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/main.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp", line 41: warning #112-D: statement is unreachable
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/main.cpp"
+ 
+Building file: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/uartstdio.d_raw" --obj_directory="src"  "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Finished building: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'vending_machine.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 29: error #20: identifier "UARTStdioIntHandler" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 110: warning #179-D: variable "aux" was declared but never referenced
+1 error detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+>> Compilation failure
+src/subdir_rules.mk:79: recipe for target 'src/UART_UC.obj' failed
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 29: error #20: identifier "UARTStdioIntHandler" is undefined
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 110: warning #179-D: variable "aux" was declared but never referenced
+1 error detected in the compilation of "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp".
+gmake: *** [src/UART_UC.obj] Error 1
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/uartstdio.d_raw" --obj_directory="src"  "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+Finished building: "C:/ti/TivaWare_C_Series-2.1.4.178/utils/uartstdio.c"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/GPIO_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/GPIO_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+"C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp", line 110: warning #179-D: variable "aux" was declared but never referenced
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'vending_machine.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/UART_UC.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.cpp"
+ 
+Building file: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/Project_CCS/vending_machine" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178/utils" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/CONTROL.d_raw" --obj_directory="src"  "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+Finished building: "C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/CONTROL.cpp"
+ 
+Building target: "vending_machine.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=UART_BUFFERED --define=ARM_PLATFORM --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"vending_machine.map" --heap_size=2048 --stack_size=2048 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="vending_machine_linkInfo.xml" --rom_model -o "vending_machine.out" "./src/CONTROL.obj" "./src/DATE_TIME.obj" "./src/DISPLAY.obj" "./src/FSM.obj" "./src/GPIO_UC.obj" "./src/IO.obj" "./src/LCD_NHDC12864.obj" "./src/LCD_UC.obj" "./src/RTC_UC.obj" "./src/TERMINAL.obj" "./src/UART_UC.obj" "./src/main.obj" "./src/tm4c123gh6pm_startup_ccs.obj" "./src/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "vending_machine.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project vending_machine ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'vending_machine.out' is up to date.
+
+**** Build Finished ****

@@ -83,6 +83,8 @@ src/CONTROL.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/wctype
 src/CONTROL.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/xlocale/_ctype.h
 src/CONTROL.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/libcxx/wchar.h
 src/CONTROL.obj: C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/libcxx/__undef_macros
+src/CONTROL.obj: C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.h
+src/CONTROL.obj: C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.h
 src/CONTROL.obj: C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.h
 src/CONTROL.obj: C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.h
 
@@ -169,5 +171,7 @@ C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/wctype.h:
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/xlocale/_ctype.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/libcxx/wchar.h: 
 C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.9.0.STS/include/libcxx/__undef_macros: 
+C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/UART_UC.h: 
+C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/TERMINAL.h: 
 C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/RTC_UC.h: 
 C:/Users/User/Dropbox/UFSC/2018.2/OO/Projeto_Final/fw/src/DATE_TIME.h: 
