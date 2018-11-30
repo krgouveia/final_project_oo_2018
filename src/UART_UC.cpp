@@ -1,3 +1,24 @@
+/**
+ * \file UART_UC.cpp
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 28, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  UART_UC.cpp
+ *
+ * \brief Define the class implements the methods to acess the CConsole class.
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   28-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
 
 #include "UART_UC.h"
 #include "driverlib/uart.h"
@@ -9,6 +30,9 @@
 #include "driverlib/pin_map.h"
 using namespace std;
 
+/**
+*   \brief Class constructor. 
+*/
 CConsole::CConsole()
 {
 	// Enable the GPIO Peripheral used by the UART.
@@ -31,6 +55,9 @@ CConsole::CConsole()
     // Initialize the UART for console I/O.
     UARTStdioConfig(0, 115200, 16000000);
 
+    //Disable UART echo.
+    UARTEchoSet(false);
+
 	systemClockReference = nullptr;
 
 	 UARTprintf("[LOG] Console running!\n\n");
@@ -42,6 +69,9 @@ CConsole::CConsole()
 	 UARTprintf("*************************************\n\n");
 }
 
+/**
+*   \brief Class constructor. 
+*/
 CConsole::CConsole(CTime* sysCk)
 {
 	// Enable the GPIO Peripheral used by the UART.
@@ -58,8 +88,14 @@ CConsole::CConsole(CTime* sysCk)
     // Use the internal 16MHz oscillator as the UART clock source.
     UARTClockSourceSet(UART0_BASE, UART_CLOCK_PIOSC);
 
+    //Register the UART interrupt handler.
+    UARTIntRegister(UART0_BASE, UARTStdioIntHandler);
+
     // Initialize the UART for console I/O.
     UARTStdioConfig(0, 115200, 16000000);
+
+    //Disable UART echo.
+    UARTEchoSet(false);
 
 	systemClockReference = sysCk;
 	
@@ -72,11 +108,20 @@ CConsole::CConsole(CTime* sysCk)
 	UARTprintf("*************************************\n\n");
 }
 
+/**
+*   \brief Class destructor. 
+*/
 CConsole::~CConsole()
 {
 
 }
 
+/**
+ * \brief Method to send strings for log information via console.
+ * \param str - string to be sent, newLine - if true, send a newLine (\n) 
+ * in the end of string. If false, doesn't.
+ * \return none
+ */
 void CConsole::writeLogString(string str, bool newLine)
 {
 	if (systemClockReference == nullptr)
@@ -91,6 +136,12 @@ void CConsole::writeLogString(string str, bool newLine)
 	}
 }
 
+/**
+ * \brief Method to send integers for log information via console.
+ * \param num - number to be sent, newLine - if true, send a newLine (\n) 
+ * in the end of string. If false, doesn't.
+ * \return none
+ */
 void CConsole::writeLogInteger(int num, bool newLine)
 {
 	if (systemClockReference == nullptr)
@@ -105,6 +156,12 @@ void CConsole::writeLogInteger(int num, bool newLine)
 	}
 }
 
+/**
+ * \briefThis method verifies if there was some valid input from keyboard.
+ * If yes, put the input in com.
+ * \param com - pointer to char
+ * \return Return true if a valid input was received, false if no.
+ */
 bool CConsole::ReadCommand(char* com)
 {
     if (UARTRxBytesAvail() > 0)

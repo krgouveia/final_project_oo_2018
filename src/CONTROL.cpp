@@ -1,20 +1,56 @@
+/**
+ * \file CONTROL.cpp
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 28, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  CONTROL.pp
+ *
+ * \brief Implements the methods of the CControl class.
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   28-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
+
 #include"CONTROL.h"
 #include <string>
 using namespace std;
 
-CControl::CControl()// : console(&systemRTC)
+/**
+*   \brief GPIO constructor. This method create a CCONTROL object instance.
+*/
+CControl::CControl() : console(&systemRTC)
 {
 	//console(&systemRTC);
 	msgCounter = 3;
 	CommandParserState = 0;
 	last_time = systemRTC.getSystemClock();
+	last_action_time = systemRTC.getSystemClock();
 }
 
+/**
+ * \brief Class destructor
+ */ 
 CControl::~CControl()
 {
 
 }
 
+/**
+ * \brief This method coordinate timming and priorites of the messages to be shown at 
+ * the display considering the priorities as FSM actions > Date/Time information > 
+ * advertising.
+ * \param none
+ * \return none
+ */
 void CControl::messageManager(void)
 {
 	string auxS;
@@ -23,10 +59,11 @@ void CControl::messageManager(void)
 	actual_time = systemRTC.getSystemClock();
 
 	//check if there is some FSM's action reported
-	if (!fila_3.checkEmpty())
+	if ((!fila_3.checkEmpty()) && (actual_time >= (last_action_time + TIME_DURATION_FSM_MSG)))
 	{
 		//delays the time to show a new message 
 		last_time += TIME_DURATION_FSM_MSG;
+		last_action_time = actual_time;
 
 		//get message from begin of fila_3
 		auxS = fila_3.popFront();
@@ -82,6 +119,11 @@ void CControl::messageManager(void)
 	}
 }
 
+/**
+ * \brief Method to receive a command from console and put it in the queue to be parsed.
+ * \param none
+ * \return none
+ */
 void CControl::receiveCommand(void)
 {
 	char auxC;
@@ -92,6 +134,11 @@ void CControl::receiveCommand(void)
 	}
 }
 
+/**
+ * \brief Method parser the commands received from the commands queue
+ * \param none
+ * \return none
+ */
 void CControl::commandsParser(void)
 {
 	char auxC;
@@ -178,10 +225,12 @@ void CControl::commandsParser(void)
 		case 2: //receive new message
 			if (commandInputBuffer.getSize() >= 1)
 			{	
+				//check if the command received has a valid lenght
 				if (countCommmand >= MSG_LENGHT_MAX) CommandParserState = 0;
 				else
 				{
 					auxC = commandInputBuffer.popFront();
+					//wait the end of the command indicated by ';'
 					if (auxC == ';')
 					{
 						fila_2.pushBack(newMessage);

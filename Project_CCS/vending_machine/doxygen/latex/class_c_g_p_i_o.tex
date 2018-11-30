@@ -1,0 +1,235 @@
+\hypertarget{class_c_g_p_i_o}{}\section{C\+G\+P\+IO Class Reference}
+\label{class_c_g_p_i_o}\index{C\+G\+P\+IO@{C\+G\+P\+IO}}
+
+
+PC\textquotesingle{}s \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class implementation.  
+
+
+
+
+{\ttfamily \#include $<$G\+P\+I\+O\+\_\+\+P\+C.\+h$>$}
+
+Inheritance diagram for C\+G\+P\+IO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g_p_i_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_g_p_i_o_a9d4e47555fcac0233f6f3ebe36153863}{C\+G\+P\+IO}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_g_p_i_o_a0751442fbab665ca1525a51361e4cfa5}\label{class_c_g_p_i_o_a0751442fbab665ca1525a51361e4cfa5}} 
+\mbox{\hyperlink{class_c_g_p_i_o_a0751442fbab665ca1525a51361e4cfa5}{$\sim$\+C\+G\+P\+IO}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_p_i_o_a6168af74d745d959e90deddb5c298385}{read\+Inputs}} (\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$queueP)
+\begin{DoxyCompactList}\small\item\em This method manage the G\+P\+I\+Os input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_p_i_o_a512879113a7515680c76fac8852f69cc}{write\+Outputs}} (\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$queueP)
+\begin{DoxyCompactList}\small\item\em Method responsible to update the outputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$ \mbox{\hyperlink{class_c_g_p_i_o_a5fda50ad2bf1efc087793542ee3c88af}{get\+Current}} (void)
+\begin{DoxyCompactList}\small\item\em Method to obtain the value of the current pointer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_g_p_i_o_a06bc11242ea8f85b5d71419bf70ef674}{set\+Current}} (\mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$gpio)
+\begin{DoxyCompactList}\small\item\em Method to set the value of the current pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$ \mbox{\hyperlink{class_c_g_p_i_o_a21d3b21fbb921eca646b24582fb5c43f}{current}} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_g_p_i_o_a94ed9692de8f805af0517790cb06b71c}{G\+P\+I\+O\+I\+SR}} ()
+\begin{DoxyCompactList}\small\item\em friend function that performs the I\+SR treatment to read the inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+PC\textquotesingle{}s \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class implementation. 
+
+uC\textquotesingle{}s \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class implementation.
+
+This class implements the methods to initialize and access the PC\textquotesingle{}s G\+P\+IO.
+
+This class implements the methods to initialize and access the microcontroller\textquotesingle{}s G\+P\+IO. 
+
+Definition at line 32 of file G\+P\+I\+O\+\_\+\+P\+C.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_g_p_i_o_a9d4e47555fcac0233f6f3ebe36153863}\label{class_c_g_p_i_o_a9d4e47555fcac0233f6f3ebe36153863}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{C\+G\+P\+I\+O()}{CGPIO()}}
+{\footnotesize\ttfamily C\+G\+P\+I\+O\+::\+C\+G\+P\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Class constructor. 
+
+G\+P\+IO constructor. This method create a G\+P\+IO object instance. Configuring G\+P\+IO interrupts 
+
+Definition at line 31 of file G\+P\+I\+O\+\_\+\+P\+C.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_g_p_i_o_a5fda50ad2bf1efc087793542ee3c88af}\label{class_c_g_p_i_o_a5fda50ad2bf1efc087793542ee3c88af}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!get\+Current@{get\+Current}}
+\index{get\+Current@{get\+Current}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{get\+Current()}{getCurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$ C\+G\+P\+I\+O\+::get\+Current (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Method to obtain the value of the current pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class pointer 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file G\+P\+I\+O\+\_\+\+U\+C.\+cpp.
+
+
+
+References current.
+
+\mbox{\Hypertarget{class_c_g_p_i_o_a6168af74d745d959e90deddb5c298385}\label{class_c_g_p_i_o_a6168af74d745d959e90deddb5c298385}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!read\+Inputs@{read\+Inputs}}
+\index{read\+Inputs@{read\+Inputs}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{read\+Inputs()}{readInputs()}}
+{\footnotesize\ttfamily void C\+G\+P\+I\+O\+::read\+Inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$}]{queueP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method manage the G\+P\+I\+Os input. 
+
+This method was supposed to manage the G\+P\+I\+Os input, but in A\+RM platfor this fuction will be done by the I\+SR.
+
+
+\begin{DoxyParams}{Parameters}
+{\em queueP} & -\/ Pointer to an \mbox{\hyperlink{class_cqueue}{Cqueue}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_i_o}{C\+IO}}.
+
+
+
+Definition at line 49 of file G\+P\+I\+O\+\_\+\+P\+C.\+cpp.
+
+\mbox{\Hypertarget{class_c_g_p_i_o_a06bc11242ea8f85b5d71419bf70ef674}\label{class_c_g_p_i_o_a06bc11242ea8f85b5d71419bf70ef674}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!set\+Current@{set\+Current}}
+\index{set\+Current@{set\+Current}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{set\+Current()}{setCurrent()}}
+{\footnotesize\ttfamily void C\+G\+P\+I\+O\+::set\+Current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$}]{gpio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Method to set the value of the current pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & class pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 192 of file G\+P\+I\+O\+\_\+\+U\+C.\+cpp.
+
+
+
+References current.
+
+\mbox{\Hypertarget{class_c_g_p_i_o_a512879113a7515680c76fac8852f69cc}\label{class_c_g_p_i_o_a512879113a7515680c76fac8852f69cc}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!write\+Outputs@{write\+Outputs}}
+\index{write\+Outputs@{write\+Outputs}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{write\+Outputs()}{writeOutputs()}}
+{\footnotesize\ttfamily void C\+G\+P\+I\+O\+::write\+Outputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$}]{queueP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method responsible to update the outputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queueP} & -\/ Pointer to an \mbox{\hyperlink{class_cqueue}{Cqueue}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_i_o}{C\+IO}}.
+
+
+
+Definition at line 120 of file G\+P\+I\+O\+\_\+\+P\+C.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_c_g_p_i_o_a94ed9692de8f805af0517790cb06b71c}\label{class_c_g_p_i_o_a94ed9692de8f805af0517790cb06b71c}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!G\+P\+I\+O\+I\+SR@{G\+P\+I\+O\+I\+SR}}
+\index{G\+P\+I\+O\+I\+SR@{G\+P\+I\+O\+I\+SR}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{G\+P\+I\+O\+I\+SR}{GPIOISR}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+I\+SR (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+friend function that performs the I\+SR treatment to read the inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file G\+P\+I\+O\+\_\+\+U\+C.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_g_p_i_o_a21d3b21fbb921eca646b24582fb5c43f}\label{class_c_g_p_i_o_a21d3b21fbb921eca646b24582fb5c43f}} 
+\index{C\+G\+P\+IO@{C\+G\+P\+IO}!current@{current}}
+\index{current@{current}!C\+G\+P\+IO@{C\+G\+P\+IO}}
+\subsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} $\ast$ C\+G\+P\+I\+O\+::current = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Pointer used to identy the object instatiated used for I\+SR purposes 
+
+Definition at line 54 of file G\+P\+I\+O\+\_\+\+U\+C.\+h.
+
+
+
+Referenced by get\+Current(), and set\+Current().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_g_p_i_o___p_c_8h}{G\+P\+I\+O\+\_\+\+P\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_g_p_i_o___u_c_8h}{G\+P\+I\+O\+\_\+\+U\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/G\+P\+I\+O\+\_\+\+P\+C.\+cpp\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_g_p_i_o___u_c_8cpp}{G\+P\+I\+O\+\_\+\+U\+C.\+cpp}}\end{DoxyCompactItemize}

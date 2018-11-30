@@ -47,7 +47,7 @@ class Cqueue
 
 
 /**
- * Class constructor
+ * \brief Class constructor
  */ 
 template<class T>
 Cqueue<T>::Cqueue()
@@ -58,7 +58,7 @@ Cqueue<T>::Cqueue()
 }
 
 /**
- * Class destructor
+ * \brief Class destructor
  */
 template<class T>
 Cqueue<T>::~Cqueue() {
@@ -66,7 +66,7 @@ Cqueue<T>::~Cqueue() {
 }
 
 /**
- * Method to check if the queue is empty
+ * \brief Method to check if the queue is empty
  * \param none
  * \return bool - TRUE if the queue is empty, FALSE if it isn't.
  */
@@ -77,7 +77,7 @@ bool Cqueue<T>::checkEmpty()
 }
 
 /**
- * Method to obtain the number of nodes that a queue contains.
+ * \brief Method to obtain the number of nodes that a queue contains.
  * \param none
  * \return int - number of nodes.
  */
@@ -88,7 +88,7 @@ int Cqueue<T>::getSize()
 }
 
 /**
- * Method to create a node to insert new data at the end of teh queue.
+ * \brief Method to create a node to insert new data at the end of teh queue.
  * \param newData - Generic data type to be inserted at the queue.
  * \return none
  */
@@ -112,7 +112,7 @@ void Cqueue<T>::pushBack(T newData)
 }
 
 /**
- * Method to get the data from the queue and delete the node used to store it.
+ * \brief Method to get the data from the queue and delete the node used to store it.
  * \param none
  * \return T - generic data type information.
  */

@@ -32,9 +32,9 @@
 
 using namespace std;
 
-#define TIME_BTW_MSGS		2000 //time between messages shown on display in miliseconds
-#define TIME_BTW_CK_DATE	1000 //duration of data/time information shown on diaplay is miliseconds
-#define MSG_LENGHT_MAX		20 //maximum message lenght to be shown in display
+#define TIME_BTW_MSGS		2000 /**time between messages shown on display in miliseconds*/
+#define TIME_BTW_CK_DATE	1000 /**duration of data/time information shown on diaplay is miliseconds*/
+#define MSG_LENGHT_MAX		20 /**maximum message lenght to be shown in display*/
 
 int main(void)
 {

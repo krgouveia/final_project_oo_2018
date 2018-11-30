@@ -1,0 +1,379 @@
+\hypertarget{_l_c_d___n_h_d_c12864_8h}{}\section{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+L\+C\+D\+\_\+\+N\+H\+D\+C12864.h File Reference}
+\label{_l_c_d___n_h_d_c12864_8h}\index{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+
+
+Implements the drivers of the L\+CD N\+H\+D\+C1264.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_abce8b05d7a5fd83cbecf40daac48736c}{L\+C\+D\+\_\+\+A0}}~G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5
+\item 
+\#define \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a74101b1cb0096d1c6d3320fc74ce384c}{C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR}}~11	/$\ast$$\ast$Config vector length$\ast$/
+\item 
+\#define \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a47a809dfec086fdeca93dedc4fb83b44}{L\+C\+D\+\_\+\+ON}}~0x\+AF
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_ab4d5ff2177b0c46bd3fe97a229b589a2}{L\+C\+D\+Initialize\+N\+H\+D\+C12864}} (void)
+\begin{DoxyCompactList}\small\item\em L\+CD initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a08548aab6d46d9d45e24c071af828712}{L\+C\+D\+Write}} (char mode, char data)
+\begin{DoxyCompactList}\small\item\em Function to write data and commands in the L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a2dd0f4693e82ac481b90e689cf6dc773}{L\+C\+D\+Set\+Start\+Line}} (char addr)
+\begin{DoxyCompactList}\small\item\em Function to read data rom the L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_aaf860efa873b0dab1001f227eabe9684}{L\+C\+D\+Set\+Column}} (char addr)
+\begin{DoxyCompactList}\small\item\em Function to set the column to write. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_ad7b46eb2cf7ce871dd24f16d503f992c}{L\+C\+D\+Set\+Page}} (char addr)
+\begin{DoxyCompactList}\small\item\em Function to set the page to write. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a3a94c0f44f76db891e66d98966f904e8}{L\+C\+D\+Clear}} (void)
+\begin{DoxyCompactList}\small\item\em Function to clear the entire L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_ac1b6f92b924f05d7a8806da4be747373}{L\+C\+D\+Reverse\+Blink}} (char n\+Blink)
+\begin{DoxyCompactList}\small\item\em Function to blink the L\+CD a number of times. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a6ea60b87eaa45cbf02e0fed1b8604f58}{L\+C\+D\+Write\+Char7x8}} (const char $\ast$alphabet, char letter)
+\begin{DoxyCompactList}\small\item\em Function to write a char in the L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_aa5391673f8fc431cd9dbb20c6b7ecd9f}{L\+C\+D\+Write\+String}} (const char $\ast$alphabet, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Function to write a string in the L\+CD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h_a8eaba5c96f45ec4dc66a74765c595269}{times8}} \mbox{[}95 $\ast$7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements the drivers of the L\+CD N\+H\+D\+C1264. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+Kleber Gouveia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 27, 2018
+\end{DoxyDate}
+Module Name\+: \mbox{\hyperlink{_l_c_d___n_h_d_c12864_8h}{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}\hypertarget{_u_a_r_t___u_c_8h_References}{}\subsection{References}\label{_u_a_r_t___u_c_8h_References}
+N\+H\+D\+C1264 Datasheet\hypertarget{_u_a_r_t___u_c_8h_Revisions}{}\subsection{Revisions}\label{_u_a_r_t___u_c_8h_Revisions}
+Revision\+: 1.\+0 27-\/\+Nov-\/2018 Kleber Gouveia
+\begin{DoxyItemize}
+\item Working baseline. 
+\end{DoxyItemize}
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a74101b1cb0096d1c6d3320fc74ce384c}\label{_l_c_d___n_h_d_c12864_8h_a74101b1cb0096d1c6d3320fc74ce384c}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR@{C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR}}
+\index{C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR@{C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR}{COMP\_LCD\_CONFIG\_VECTOR}}
+{\footnotesize\ttfamily \#define C\+O\+M\+P\+\_\+\+L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+E\+C\+T\+OR~11	/$\ast$$\ast$Config vector length$\ast$/}
+
+L\+CD driver configurations 
+
+Definition at line 46 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h.
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_abce8b05d7a5fd83cbecf40daac48736c}\label{_l_c_d___n_h_d_c12864_8h_abce8b05d7a5fd83cbecf40daac48736c}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+\_\+\+A0@{L\+C\+D\+\_\+\+A0}}
+\index{L\+C\+D\+\_\+\+A0@{L\+C\+D\+\_\+\+A0}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+\+A0}{LCD\_A0}}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+A0~G\+P\+I\+O\+\_\+\+P\+I\+N\+\_\+5}
+
+L\+CD Pin mapping 
+
+Definition at line 33 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h.
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a47a809dfec086fdeca93dedc4fb83b44}\label{_l_c_d___n_h_d_c12864_8h_a47a809dfec086fdeca93dedc4fb83b44}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+\_\+\+ON@{L\+C\+D\+\_\+\+ON}}
+\index{L\+C\+D\+\_\+\+ON@{L\+C\+D\+\_\+\+ON}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+\+ON}{LCD\_ON}}
+{\footnotesize\ttfamily \#define L\+C\+D\+\_\+\+ON~0x\+AF}
+
+L\+CD N\+H\+D-\/\+C12864\+B2Z commands 
+
+Definition at line 57 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a3a94c0f44f76db891e66d98966f904e8}\label{_l_c_d___n_h_d_c12864_8h_a3a94c0f44f76db891e66d98966f904e8}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Clear@{L\+C\+D\+Clear}}
+\index{L\+C\+D\+Clear@{L\+C\+D\+Clear}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Clear()}{LCDClear()}}
+{\footnotesize\ttfamily void L\+C\+D\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to clear the entire L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Set\+Column(), and L\+C\+D\+Set\+Page().
+
+
+
+Referenced by C\+L\+C\+D\+::clear\+Screen().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_ab4d5ff2177b0c46bd3fe97a229b589a2}\label{_l_c_d___n_h_d_c12864_8h_ab4d5ff2177b0c46bd3fe97a229b589a2}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Initialize\+N\+H\+D\+C12864@{L\+C\+D\+Initialize\+N\+H\+D\+C12864}}
+\index{L\+C\+D\+Initialize\+N\+H\+D\+C12864@{L\+C\+D\+Initialize\+N\+H\+D\+C12864}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Initialize\+N\+H\+D\+C12864()}{LCDInitializeNHDC12864()}}
+{\footnotesize\ttfamily void L\+C\+D\+Initialize\+N\+H\+D\+C12864 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+L\+CD initialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_ac1b6f92b924f05d7a8806da4be747373}\label{_l_c_d___n_h_d_c12864_8h_ac1b6f92b924f05d7a8806da4be747373}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Reverse\+Blink@{L\+C\+D\+Reverse\+Blink}}
+\index{L\+C\+D\+Reverse\+Blink@{L\+C\+D\+Reverse\+Blink}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Reverse\+Blink()}{LCDReverseBlink()}}
+{\footnotesize\ttfamily void L\+C\+D\+Reverse\+Blink (\begin{DoxyParamCaption}\item[{char}]{n\+Blink }\end{DoxyParamCaption})}
+
+
+
+Function to blink the L\+CD a number of times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Blink} & -\/ number of times to blink \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 329 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Write().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_aaf860efa873b0dab1001f227eabe9684}\label{_l_c_d___n_h_d_c12864_8h_aaf860efa873b0dab1001f227eabe9684}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Set\+Column@{L\+C\+D\+Set\+Column}}
+\index{L\+C\+D\+Set\+Column@{L\+C\+D\+Set\+Column}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Set\+Column()}{LCDSetColumn()}}
+{\footnotesize\ttfamily void L\+C\+D\+Set\+Column (\begin{DoxyParamCaption}\item[{char}]{addr }\end{DoxyParamCaption})}
+
+
+
+Function to set the column to write. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & the position selected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 284 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Write().
+
+
+
+Referenced by L\+C\+D\+Clear(), L\+C\+D\+Write\+String(), and C\+L\+C\+D\+::set\+Position().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_ad7b46eb2cf7ce871dd24f16d503f992c}\label{_l_c_d___n_h_d_c12864_8h_ad7b46eb2cf7ce871dd24f16d503f992c}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Set\+Page@{L\+C\+D\+Set\+Page}}
+\index{L\+C\+D\+Set\+Page@{L\+C\+D\+Set\+Page}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Set\+Page()}{LCDSetPage()}}
+{\footnotesize\ttfamily void L\+C\+D\+Set\+Page (\begin{DoxyParamCaption}\item[{char}]{addr }\end{DoxyParamCaption})}
+
+
+
+Function to set the page to write. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & the position selected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 295 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Write().
+
+
+
+Referenced by L\+C\+D\+Clear(), L\+C\+D\+Write\+String(), and C\+L\+C\+D\+::set\+Position().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a2dd0f4693e82ac481b90e689cf6dc773}\label{_l_c_d___n_h_d_c12864_8h_a2dd0f4693e82ac481b90e689cf6dc773}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Set\+Start\+Line@{L\+C\+D\+Set\+Start\+Line}}
+\index{L\+C\+D\+Set\+Start\+Line@{L\+C\+D\+Set\+Start\+Line}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Set\+Start\+Line()}{LCDSetStartLine()}}
+{\footnotesize\ttfamily void L\+C\+D\+Set\+Start\+Line (\begin{DoxyParamCaption}\item[{char}]{addr }\end{DoxyParamCaption})}
+
+
+
+Function to read data rom the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & can be D\+A\+TA or C\+O\+MM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value read Function to set the line to write 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & the position selected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 274 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Write().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a08548aab6d46d9d45e24c071af828712}\label{_l_c_d___n_h_d_c12864_8h_a08548aab6d46d9d45e24c071af828712}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Write@{L\+C\+D\+Write}}
+\index{L\+C\+D\+Write@{L\+C\+D\+Write}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Write()}{LCDWrite()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write (\begin{DoxyParamCaption}\item[{char}]{mode,  }\item[{char}]{data }\end{DoxyParamCaption})}
+
+
+
+Function to write data and commands in the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & can be D\+A\+TA or C\+O\+MM \\
+\hline
+{\em data} & the information to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+Referenced by L\+C\+D\+Reverse\+Blink(), L\+C\+D\+Set\+Column(), L\+C\+D\+Set\+Page(), L\+C\+D\+Set\+Start\+Line(), and L\+C\+D\+Write\+Char7x8().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a6ea60b87eaa45cbf02e0fed1b8604f58}\label{_l_c_d___n_h_d_c12864_8h_a6ea60b87eaa45cbf02e0fed1b8604f58}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Write\+Char7x8@{L\+C\+D\+Write\+Char7x8}}
+\index{L\+C\+D\+Write\+Char7x8@{L\+C\+D\+Write\+Char7x8}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Write\+Char7x8()}{LCDWriteChar7x8()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+Char7x8 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{alphabet,  }\item[{char}]{letter }\end{DoxyParamCaption})}
+
+
+
+Function to write a char in the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$alphabet} & -\/ pointer to the font tipe selected \\
+\hline
+{\em letter} & -\/ the char to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 349 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Write().
+
+
+
+Referenced by L\+C\+D\+Write\+String().
+
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_aa5391673f8fc431cd9dbb20c6b7ecd9f}\label{_l_c_d___n_h_d_c12864_8h_aa5391673f8fc431cd9dbb20c6b7ecd9f}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!L\+C\+D\+Write\+String@{L\+C\+D\+Write\+String}}
+\index{L\+C\+D\+Write\+String@{L\+C\+D\+Write\+String}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+Write\+String()}{LCDWriteString()}}
+{\footnotesize\ttfamily void L\+C\+D\+Write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{alphabet,  }\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Function to write a string in the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$alphabet} & -\/ pointer to the font tipe selected \\
+\hline
+{\em $\ast$str} & -\/ pointer to the string to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 365 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+References L\+C\+D\+Set\+Column(), L\+C\+D\+Set\+Page(), and L\+C\+D\+Write\+Char7x8().
+
+
+
+Referenced by C\+L\+C\+D\+::write\+String().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_l_c_d___n_h_d_c12864_8h_a8eaba5c96f45ec4dc66a74765c595269}\label{_l_c_d___n_h_d_c12864_8h_a8eaba5c96f45ec4dc66a74765c595269}} 
+\index{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}!times8@{times8}}
+\index{times8@{times8}!L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h@{L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+h}}
+\subsubsection{\texorpdfstring{times8}{times8}}
+{\footnotesize\ttfamily const char times8\mbox{[}95 $\ast$7\mbox{]}}
+
+L\+CD display O\+N/\+O\+FF\+: ON ~\newline
+ Lookup Table containing printed characteres 7x8 (between \char`\"{} \char`\"{} and \char`\"{}$\sim$\char`\"{}),Times New Human, A\+S\+C\+II. 
+
+Definition at line 45 of file L\+C\+D\+\_\+\+N\+H\+D\+C12864.\+c.
+
+
+
+Referenced by C\+L\+C\+D\+::write\+String().
+

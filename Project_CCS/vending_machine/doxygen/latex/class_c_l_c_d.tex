@@ -1,0 +1,174 @@
+\hypertarget{class_c_l_c_d}{}\section{C\+L\+CD Class Reference}
+\label{class_c_l_c_d}\index{C\+L\+CD@{C\+L\+CD}}
+
+
+\mbox{\hyperlink{class_c_l_c_d}{C\+L\+CD}} class implementation.  
+
+
+
+
+{\ttfamily \#include $<$L\+C\+D\+\_\+\+U\+C.\+h$>$}
+
+Inheritance diagram for C\+L\+CD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_l_c_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_l_c_d_ad695e45a239fa3190dc6192cff4c3a53}\label{class_c_l_c_d_ad695e45a239fa3190dc6192cff4c3a53}} 
+\mbox{\hyperlink{class_c_l_c_d_ad695e45a239fa3190dc6192cff4c3a53}{C\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_l_c_d_ac958cb7e31c6793cbbf2894b55671ddc}\label{class_c_l_c_d_ac958cb7e31c6793cbbf2894b55671ddc}} 
+\mbox{\hyperlink{class_c_l_c_d_ac958cb7e31c6793cbbf2894b55671ddc}{$\sim$\+C\+L\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_l_c_d_aef53edad0951495613b38a0033a7d34c}{clear\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Method to clear the entire L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_l_c_d_a48bc8230b2cef435c7972fd3e9522711}{write\+String}} (string str)
+\begin{DoxyCompactList}\small\item\em Method to write a string in the L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_l_c_d_ab5547c17a38247c90db076b8c04baa17}{write\+Integer}} (int num)
+\begin{DoxyCompactList}\small\item\em Method to write a number in the L\+CD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_l_c_d_af2d845b403b8978261a397cfe50f2fdc}{set\+Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Method to the position to write in L\+CD. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_c_l_c_d}{C\+L\+CD}} class implementation. 
+
+This class implements the methods to initialize and access the L\+CD from the microcontroller\textquotesingle{}s G\+P\+IO.
+
+This class implements the methods to initialize and access the L\+CD from the PC\textquotesingle{}s. 
+
+Definition at line 32 of file L\+C\+D\+\_\+\+U\+C.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_l_c_d_aef53edad0951495613b38a0033a7d34c}\label{class_c_l_c_d_aef53edad0951495613b38a0033a7d34c}} 
+\index{C\+L\+CD@{C\+L\+CD}!clear\+Screen@{clear\+Screen}}
+\index{clear\+Screen@{clear\+Screen}!C\+L\+CD@{C\+L\+CD}}
+\subsubsection{\texorpdfstring{clear\+Screen()}{clearScreen()}}
+{\footnotesize\ttfamily void C\+L\+C\+D\+::clear\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to clear the entire L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_display}{C\+Display}}.
+
+
+
+Definition at line 81 of file L\+C\+D\+\_\+\+U\+C.\+cpp.
+
+
+
+References L\+C\+D\+Clear().
+
+\mbox{\Hypertarget{class_c_l_c_d_af2d845b403b8978261a397cfe50f2fdc}\label{class_c_l_c_d_af2d845b403b8978261a397cfe50f2fdc}} 
+\index{C\+L\+CD@{C\+L\+CD}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!C\+L\+CD@{C\+L\+CD}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void C\+L\+C\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to the position to write in L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ is the column \\
+\hline
+{\em y} & -\/ is the page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_display}{C\+Display}}.
+
+
+
+Definition at line 116 of file L\+C\+D\+\_\+\+U\+C.\+cpp.
+
+
+
+References L\+C\+D\+Set\+Column(), and L\+C\+D\+Set\+Page().
+
+\mbox{\Hypertarget{class_c_l_c_d_ab5547c17a38247c90db076b8c04baa17}\label{class_c_l_c_d_ab5547c17a38247c90db076b8c04baa17}} 
+\index{C\+L\+CD@{C\+L\+CD}!write\+Integer@{write\+Integer}}
+\index{write\+Integer@{write\+Integer}!C\+L\+CD@{C\+L\+CD}}
+\subsubsection{\texorpdfstring{write\+Integer()}{writeInteger()}}
+{\footnotesize\ttfamily void C\+L\+C\+D\+::write\+Integer (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to write a number in the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & -\/ number to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_display}{C\+Display}}.
+
+
+
+Definition at line 105 of file L\+C\+D\+\_\+\+U\+C.\+cpp.
+
+\mbox{\Hypertarget{class_c_l_c_d_a48bc8230b2cef435c7972fd3e9522711}\label{class_c_l_c_d_a48bc8230b2cef435c7972fd3e9522711}} 
+\index{C\+L\+CD@{C\+L\+CD}!write\+String@{write\+String}}
+\index{write\+String@{write\+String}!C\+L\+CD@{C\+L\+CD}}
+\subsubsection{\texorpdfstring{write\+String()}{writeString()}}
+{\footnotesize\ttfamily void C\+L\+C\+D\+::write\+String (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to write a string in the L\+CD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ string to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_display}{C\+Display}}.
+
+
+
+Definition at line 92 of file L\+C\+D\+\_\+\+U\+C.\+cpp.
+
+
+
+References L\+C\+D\+Write\+String(), and times8.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_l_c_d___u_c_8h}{L\+C\+D\+\_\+\+U\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_s_c_r_e_e_n___p_c_8h}{S\+C\+R\+E\+E\+N\+\_\+\+P\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/L\+C\+D\+\_\+\+U\+C.\+cpp\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_s_c_r_e_e_n___p_c_8cpp}{S\+C\+R\+E\+E\+N\+\_\+\+P\+C.\+cpp}}\end{DoxyCompactItemize}

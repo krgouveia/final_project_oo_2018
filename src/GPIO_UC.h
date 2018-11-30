@@ -25,18 +25,18 @@
 
 #include "IO.h"
 
-#define M025_IN     0
-#define M050_IN     GPIO_PIN_4 //SW1
-#define M100_IN     0
-#define MEET_IN     GPIO_PIN_0 //SW2
-#define ETIRPS_IN   0
-#define DEV_IN      0
+#define M025_IN     GPIO_PIN_0 //PD0
+#define M050_IN     GPIO_PIN_1 //PD1
+#define M100_IN     GPIO_PIN_2 //PD2
+#define MEET_IN     GPIO_PIN_4 //PF4 - SW1 onboard
+#define ETIRPS_IN   GPIO_PIN_0 //PF0 - SW2 onboard
+#define DEV_IN      GPIO_PIN_3 //PD3
 
-#define M025_OUT    GPIO_PIN_3 //LED_green
-#define M050_OUT    GPIO_PIN_3 //LED_green
-#define M100_OUT    GPIO_PIN_3 //LED_green
-#define MEET_OUT    GPIO_PIN_1 //LED_red
-#define ETIRPS_OUT  GPIO_PIN_2 //LED_blue
+#define M025_OUT    GPIO_PIN_1 //PE1
+#define M050_OUT    GPIO_PIN_2 //PE2
+#define M100_OUT    GPIO_PIN_3 //PE3
+#define MEET_OUT    GPIO_PIN_1 //PF1 - LED_red onboard
+#define ETIRPS_OUT  GPIO_PIN_2 //PF2 - LED_blue onboard
 
 /** \class CGPIO
 *	\brief uC's CGPIO class implementation.
@@ -49,11 +49,10 @@ public:
 	~CGPIO();
 	void readInputs(Cqueue<string>* queueP);
 	void writeOutputs(Cqueue<string>* queueP);
-	void showCredit(int credit);
 	friend void GPIOISR();
 protected:
 	static CGPIO* current;
-	static CGPIO* getCurrent();
+	static CGPIO* getCurrent(void);
 	static void setCurrent(CGPIO* gpio);
 };
 

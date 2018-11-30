@@ -1,0 +1,110 @@
+\hypertarget{class_c_f_s_m}{}\section{C\+F\+SM Class Reference}
+\label{class_c_f_s_m}\index{C\+F\+SM@{C\+F\+SM}}
+
+
+System\textquotesingle{}s \mbox{\hyperlink{class_c_f_s_m}{C\+F\+SM}} class implementation.  
+
+
+
+
+{\ttfamily \#include $<$F\+S\+M.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_f_s_m_a84a43705322f53414f0f7fceeb9b26c6}\label{class_c_f_s_m_a84a43705322f53414f0f7fceeb9b26c6}} 
+\mbox{\hyperlink{class_c_f_s_m_a84a43705322f53414f0f7fceeb9b26c6}{C\+F\+SM}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_f_s_m_a99c583f74a419101fe47dda8ad7423c7}\label{class_c_f_s_m_a99c583f74a419101fe47dda8ad7423c7}} 
+\mbox{\hyperlink{class_c_f_s_m_a99c583f74a419101fe47dda8ad7423c7}{$\sim$\+C\+F\+SM}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_f_s_m_afce29c93915785baa519eb824efc938b}{change\+State}} (\mbox{\hyperlink{_f_s_m_8h_a7d59fd39d0fd81e92c4d689f0f6e1fab}{F\+S\+Mstate\+\_\+t}} new\+State)
+\begin{DoxyCompactList}\small\item\em Method to change the state of the F\+SM. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_f_s_m_8h_a7d59fd39d0fd81e92c4d689f0f6e1fab}{F\+S\+Mstate\+\_\+t}} \mbox{\hyperlink{class_c_f_s_m_a596ebe7fc03a0d1402fefc650f6c1777}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Method get the state of the F\+SM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_f_s_m_a5e7a63354d1088160e3d790bebb099af}{run\+F\+SM}} (\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$queueP)
+\begin{DoxyCompactList}\small\item\em Method that implements the F\+SM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+System\textquotesingle{}s \mbox{\hyperlink{class_c_f_s_m}{C\+F\+SM}} class implementation. 
+
+This class implements the methods to run the F\+SM. 
+
+Definition at line 43 of file F\+S\+M.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_f_s_m_afce29c93915785baa519eb824efc938b}\label{class_c_f_s_m_afce29c93915785baa519eb824efc938b}} 
+\index{C\+F\+SM@{C\+F\+SM}!change\+State@{change\+State}}
+\index{change\+State@{change\+State}!C\+F\+SM@{C\+F\+SM}}
+\subsubsection{\texorpdfstring{change\+State()}{changeState()}}
+{\footnotesize\ttfamily void C\+F\+S\+M\+::change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_f_s_m_8h_a7d59fd39d0fd81e92c4d689f0f6e1fab}{F\+S\+Mstate\+\_\+t}}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Method to change the state of the F\+SM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State} & -\/ new F\+SM state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file F\+S\+M.\+cpp.
+
+\mbox{\Hypertarget{class_c_f_s_m_a596ebe7fc03a0d1402fefc650f6c1777}\label{class_c_f_s_m_a596ebe7fc03a0d1402fefc650f6c1777}} 
+\index{C\+F\+SM@{C\+F\+SM}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!C\+F\+SM@{C\+F\+SM}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_f_s_m_8h_a7d59fd39d0fd81e92c4d689f0f6e1fab}{F\+S\+Mstate\+\_\+t}} C\+F\+S\+M\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method get the state of the F\+SM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+actual F\+SM state 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file F\+S\+M.\+cpp.
+
+\mbox{\Hypertarget{class_c_f_s_m_a5e7a63354d1088160e3d790bebb099af}\label{class_c_f_s_m_a5e7a63354d1088160e3d790bebb099af}} 
+\index{C\+F\+SM@{C\+F\+SM}!run\+F\+SM@{run\+F\+SM}}
+\index{run\+F\+SM@{run\+F\+SM}!C\+F\+SM@{C\+F\+SM}}
+\subsubsection{\texorpdfstring{run\+F\+S\+M()}{runFSM()}}
+{\footnotesize\ttfamily void C\+F\+S\+M\+::run\+F\+SM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ string $>$ $\ast$}]{queueP }\end{DoxyParamCaption})}
+
+
+
+Method that implements the F\+SM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queueP} & -\/ pointer to a queue used to send messages informing the actions executed by the F\+SM. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file F\+S\+M.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_f_s_m_8h}{F\+S\+M.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/F\+S\+M.\+cpp\end{DoxyCompactItemize}

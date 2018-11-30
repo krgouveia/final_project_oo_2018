@@ -1,8 +1,32 @@
+/**
+ * \file CONTROL.h
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 28, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  CONTROL.h
+ *
+ * \brief Define the class CControl that manages the logic to put messages in the
+ * display and the console.
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   28-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
+
 #ifndef CONTROL_H
 #define CONTROL_H
 
 #include "queue.hpp"
 
+/**Mechanism to select the hardware platform to run*/
 #ifdef ARM_PLATFORM
 #include "LCD_UC.h"
 #include "UART_UC.h"
@@ -14,25 +38,29 @@
 #include "TIME_PC.h"
 #endif
 
-#define TIME_DURATION_AD_MSG	3000 //duration of advertising messages shown on diaplay is miliseconds
-#define TIME_DURATION_DATE_MSG	2000 //duration of data/time information shown on diaplay is miliseconds
-#define TIME_DURATION_FSM_MSG	1000 //duration of fsm actions shown on diaplay is miliseconds
-#define MSG_LENGHT_MAX			20 //maximum message lenght to be shown in display
+#define TIME_DURATION_AD_MSG	3000 /**duration of advertising messages shown on diaplay is miliseconds*/
+#define TIME_DURATION_DATE_MSG	2000 /**duration of data/time information shown on diaplay is miliseconds*/
+#define TIME_DURATION_FSM_MSG	1000 /**duration of fsm actions shown on diaplay is miliseconds*/
+#define MSG_LENGHT_MAX			20 /**maximum message lenght to be shown in display*/
 
-
+/** \class CControl
+*	\brief CControl class implementation.
+*	\details This class implements the methods to manager the messages and the commands of the system.
+*/
 class CControl{
 protected:
-	//display logic variables
+	//display logic atributes
 	long int last_time;
+	long int last_action_time;
 	long int actual_time;
 	int msgCounter;// = 3;
 	
-	//command logic variables
+	//command logic atributes
 	int CommandParserState;// = 0;
 	string newMessage;
 	int countCommmand;
 	
-	////instantiating the system real timer clock
+	//instantiating the system real timer clock
 	CTime systemRTC;
 	//instantiating the console
 	CConsole console;

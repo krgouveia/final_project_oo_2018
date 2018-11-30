@@ -1,0 +1,157 @@
+\hypertarget{class_c_console}{}\section{C\+Console Class Reference}
+\label{class_c_console}\index{C\+Console@{C\+Console}}
+
+
+PC\textquotesingle{}s \mbox{\hyperlink{class_c_console}{C\+Console}} class implementation.  
+
+
+
+
+{\ttfamily \#include $<$C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+h$>$}
+
+Inheritance diagram for C\+Console\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_console}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_console_a9ff3a14fd32fec13a98fd6064d26c861}{C\+Console}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_console}{C\+Console}} constructor. This method create a \mbox{\hyperlink{class_c_console}{C\+Console}} object instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_console_a43dc951b007232f5cc98230c160813f3}\label{class_c_console_a43dc951b007232f5cc98230c160813f3}} 
+\mbox{\hyperlink{class_c_console_a43dc951b007232f5cc98230c160813f3}{C\+Console}} (C\+Time $\ast$sys\+Ck)
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_console_a1d1ecc48fc4de70bfe0f6530c9d3bfc5}\label{class_c_console_a1d1ecc48fc4de70bfe0f6530c9d3bfc5}} 
+\mbox{\hyperlink{class_c_console_a1d1ecc48fc4de70bfe0f6530c9d3bfc5}{$\sim$\+C\+Console}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_console_a23af1eebefd7cce94b4bdd5cc430e360}{write\+Log\+String}} (string str, bool new\+Line)
+\begin{DoxyCompactList}\small\item\em Method to send strings for log information via console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_console_ad6f84380de57942510c8abfc5226f6c5}{write\+Log\+Integer}} (int num, bool new\+Line)
+\begin{DoxyCompactList}\small\item\em Method to send integers for log information via console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_console_a93d2d9f396de1137b6aefe87643ff7fe}{Read\+Command}} (char $\ast$com)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+PC\textquotesingle{}s \mbox{\hyperlink{class_c_console}{C\+Console}} class implementation. 
+
+UC\textquotesingle{}s \mbox{\hyperlink{class_c_console}{C\+Console}} class implementation.
+
+This class implements the methods to initialize and access a command line interface. 
+
+Definition at line 34 of file C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_console_a9ff3a14fd32fec13a98fd6064d26c861}\label{class_c_console_a9ff3a14fd32fec13a98fd6064d26c861}} 
+\index{C\+Console@{C\+Console}!C\+Console@{C\+Console}}
+\index{C\+Console@{C\+Console}!C\+Console@{C\+Console}}
+\subsubsection{\texorpdfstring{C\+Console()}{CConsole()}}
+{\footnotesize\ttfamily C\+Console\+::\+C\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_c_console}{C\+Console}} constructor. This method create a \mbox{\hyperlink{class_c_console}{C\+Console}} object instance. 
+
+Class constructor. 
+
+Definition at line 33 of file C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_console_a93d2d9f396de1137b6aefe87643ff7fe}\label{class_c_console_a93d2d9f396de1137b6aefe87643ff7fe}} 
+\index{C\+Console@{C\+Console}!Read\+Command@{Read\+Command}}
+\index{Read\+Command@{Read\+Command}!C\+Console@{C\+Console}}
+\subsubsection{\texorpdfstring{Read\+Command()}{ReadCommand()}}
+{\footnotesize\ttfamily bool C\+Console\+::\+Read\+Command (\begin{DoxyParamCaption}\item[{char $\ast$}]{com }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+method verifies if there was some valid input from keyboard. If yes, put the input in com. 
+\begin{DoxyParams}{Parameters}
+{\em com} & -\/ pointer to char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if a valid input was received, false if no. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_terminal}{C\+Terminal}}.
+
+
+
+Definition at line 142 of file C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+cpp.
+
+
+
+Referenced by C\+Control\+::receive\+Command().
+
+\mbox{\Hypertarget{class_c_console_ad6f84380de57942510c8abfc5226f6c5}\label{class_c_console_ad6f84380de57942510c8abfc5226f6c5}} 
+\index{C\+Console@{C\+Console}!write\+Log\+Integer@{write\+Log\+Integer}}
+\index{write\+Log\+Integer@{write\+Log\+Integer}!C\+Console@{C\+Console}}
+\subsubsection{\texorpdfstring{write\+Log\+Integer()}{writeLogInteger()}}
+{\footnotesize\ttfamily void C\+Console\+::write\+Log\+Integer (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{bool}]{new\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to send integers for log information via console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & -\/ number to be sent, new\+Line -\/ if true, send a new\+Line (~\newline
+) in the end of string. If false, doesn\textquotesingle{}t. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_terminal}{C\+Terminal}}.
+
+
+
+Definition at line 117 of file C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+cpp.
+
+\mbox{\Hypertarget{class_c_console_a23af1eebefd7cce94b4bdd5cc430e360}\label{class_c_console_a23af1eebefd7cce94b4bdd5cc430e360}} 
+\index{C\+Console@{C\+Console}!write\+Log\+String@{write\+Log\+String}}
+\index{write\+Log\+String@{write\+Log\+String}!C\+Console@{C\+Console}}
+\subsubsection{\texorpdfstring{write\+Log\+String()}{writeLogString()}}
+{\footnotesize\ttfamily void C\+Console\+::write\+Log\+String (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{bool}]{new\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to send strings for log information via console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ string to be sent, new\+Line -\/ if true, send a new\+Line (~\newline
+) in the end of string. If false, doesn\textquotesingle{}t. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_terminal}{C\+Terminal}}.
+
+
+
+Definition at line 92 of file C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+cpp.
+
+
+
+Referenced by C\+Control\+::commands\+Parser().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_c_o_n_s_o_l_e___p_c_8h}{C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_u_a_r_t___u_c_8h}{U\+A\+R\+T\+\_\+\+U\+C.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_c_o_n_s_o_l_e___p_c_8cpp}{C\+O\+N\+S\+O\+L\+E\+\_\+\+P\+C.\+cpp}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_u_a_r_t___u_c_8cpp}{U\+A\+R\+T\+\_\+\+U\+C.\+cpp}}\end{DoxyCompactItemize}

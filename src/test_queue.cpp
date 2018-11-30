@@ -25,6 +25,7 @@
 #include <iostream>
 using namespace std;
 
+//main function to test the queues
 int main(void)
 {
 	Cqueue<string> q;

@@ -1,8 +1,24 @@
-/*!
- *  \file 		LCD_NHDC12864.c
- *  \brief		Implementação do driver para o display LCD NHDC1264.
- *  \author		Kleber Reis Gouveia Júnior
- */
+/**
+ * \file LCD_NHDC12864.c
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 27, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  LCD_NHDC12864.c
+ *
+ * \brief Implements the drivers of the LCD NHDC1264.
+ *
+ * \section References
+ * NHDC1264 Datasheet
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   27-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
 
 //Includes
 #include <stdint.h>
@@ -12,23 +28,20 @@
 #include "driverlib/sysctl.h"
 #include "inc/hw_memmap.h"
 
-//Variaveis globais internas
+//Internal global variables
 char lcdConfigVector[COMP_LCD_CONFIG_VECTOR]={LCD_BIAS_1_9,         /*!<Sets the LCD drive voltage bias ratio: 1/9 bias			*/
-		LCD_RAM_SEG_NORMAL,   /*!<Sets the LCD RAM adress SEG output corresp: normal      */
-		LCD_COM_OUT_REVERSE,  /*!<Select COM output scan direction: reverse               */
-		LCD_ALL_POINTS_OFF,   /*!<Display all points: all points off                      */
-		LCD_RAM_LINE|0x00,    /*!<Sets the LCD RAM start line address: 000000             */
-		LCD_RES_RATIO|0x05,   /*!<Select Internal resistor ratio: 000                     */
-		LCD_VOL_MODE,         /*!<Set the Vo output voltage electronic volume register    */
-		LCD_VOL_REG|0x10,     /*!<Set electronic volume register                          */
-		LCD_PWR_CRT|0x07,     /*!<Select internal power supply operating mode: 111        */
-		LCD_NORMAL,           /*!<                                                        */
-		LCD_ON};              /*!<LCD display ON/OFF: ON                                  */
+		LCD_RAM_SEG_NORMAL,   /**Sets the LCD RAM adress SEG output corresp: normal      */
+		LCD_COM_OUT_REVERSE,  /**Select COM output scan direction: reverse               */
+		LCD_ALL_POINTS_OFF,   /**Display all points: all points off                      */
+		LCD_RAM_LINE|0x00,    /**Sets the LCD RAM start line address: 000000             */
+		LCD_RES_RATIO|0x05,   /**Select Internal resistor ratio: 000                     */
+		LCD_VOL_MODE,         /**Set the Vo output voltage electronic volume register    */
+		LCD_VOL_REG|0x10,     /**Set electronic volume register                          */
+		LCD_PWR_CRT|0x07,     /**Select internal power supply operating mode: 111        */
+		LCD_NORMAL,           /**                                                        */
+		LCD_ON};              /**LCD display ON/OFF: ON                                  */
 
-//Corpo das funcoes definidas no .h
-
-//Constantes
-/*! Lookup Table contendo caracteres 7x8 imprimíveis (entre " " e "~") em Times New Human no padrão ASCII.*/
+/*! Lookup Table containing printed characteres 7x8 (between " " and "~"),Times New Human, ASCII.*/
 const char times8 [95*7]={
  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // (Space)
  0x00, 0x00, 0x0E, 0xBE, 0x00, 0x00, 0x00, // !
@@ -128,8 +141,9 @@ const char times8 [95*7]={
 };
 
 /**
- * Implementação da inicialização do LCD.
- * São carregados os comandos de controle armazenados em lcdConfigVector[].
+ * \brief LCD initialization
+ * \param none
+ * \return none
  */
 void LCDInitializeNHDC12864(void)
 {
@@ -146,10 +160,11 @@ void LCDInitializeNHDC12864(void)
 	LCDClear();
 }
 
-/**
- * Envia para o LCD um comando (mode=COMM) ou dado (mode=DATA) para o LCD.
- * @param mode Seleção do modo de envio: comando (COMM) ou dado (DATA).
- * @param data Valor enviado.
+ /**
+ * \brief Function to write data and commands in the LCD
+ * \param mode can be DATA or COMM
+ * \param data the information to be sent
+ * \return none
  */
 void LCDWrite(char mode, char data)
 {
@@ -211,10 +226,10 @@ void LCDWrite(char mode, char data)
 }
 
 
-/**
- * Lê do LCD um status (mode=STATUS) ou dado (mode=DATA).
- * @param mode Seleção do modo de leitura: status (STATUS) ou dado (DATA).
- * @return Valor lido do LCD.
+ /**
+ * \brief Function to read data rom the LCD
+ * \param mode can be DATA or COMM
+ * \return value read
  */
 /*
  unsigned char LCDRead(char mode)
@@ -251,16 +266,20 @@ void LCDWrite(char mode, char data)
 }
 */
 
-/**
- * Define a linha inicial do LCD.
+ /**
+ * \brief Function to set the line to write
+ * \param addr the position selected
+ * \return none
  */
 void LCDSetStartLine(char addr)
 {
 	LCDWrite(COMM,(LCD_RAM_LINE|(addr&0x3F)));
 }
 
-/**
- * 	Seleciona o endereço da coluna do LCD a ser acessada.
+ /**
+ * \brief Function to set the column to write
+ * \param addr the position selected
+ * \return none
  */
 void LCDSetColumn(char addr)
 {
@@ -268,16 +287,20 @@ void LCDSetColumn(char addr)
 	LCDWrite(COMM,(LCD_RAM_COL_L|(addr&0x0F)));
 }
 
-/**
- * 	Seleciona o endereço da página do LCD a ser acessada.
+ /**
+ * \brief Function to set the page to write
+ * \param addr the position selected
+ * \return none
  */
 void LCDSetPage(char addr)
 {
 	LCDWrite(COMM,(LCD_RAM_PAGE|(addr&0x0F)));
 }
 
-/**
- * Apaga o LCD.
+ /**
+ * \brief Function to clear the entire LCD
+ * \param none
+ * \return none
  */
 void LCDClear(void)
 {
@@ -298,9 +321,10 @@ void LCDClear(void)
 	}
 }
 
-/**
- * Faz o LCD piscar por um número de vezes (nBlink) invertendo suas cores.
- * @param nBlink Número de vezes que o Display deve piscar.
+ /**
+ * \brief Function to blink the LCD a number of times
+ * \param nBlink - number of times to blink
+ * \return none
  */
 void LCDReverseBlink(char nBlink)
 {
@@ -316,10 +340,11 @@ void LCDReverseBlink(char nBlink)
 	}
 }
 
-/**
- * Escreve um caractere (letter) de tamanho 7x8 pixels defino pela matriz *alphabet.
- * @param *alphabet Matriz que define o tipo de fonte utilizada.
- * @param letter Caractere a ser escrito.
+ /**
+ * \brief Function to write a char in the LCD
+ * \param *alphabet  - pointer to the font tipe selected
+ * \param letter - the char to write
+ * \return none
  */
 void LCDWriteChar7x8(const char *alphabet, char letter)
 {
@@ -331,10 +356,11 @@ void LCDWriteChar7x8(const char *alphabet, char letter)
 	}
 }
 
-/**
- * Escreve uma string (*string) de caracteres de tamanho 7x8 pixels defino pela matriz *alphabet.
- * @param *alphabet Matriz que define o tipo de fonte utilizada.
- * @param *string String a ser escrita.
+ /**
+ * \brief Function to write a string in the LCD
+ * \param *alphabet  - pointer to the font tipe selected
+ * \param *str - pointer to the string to write
+ * \return none
  */
 void LCDWriteString(const char *alphabet, char *str)
 {

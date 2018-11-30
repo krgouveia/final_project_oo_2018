@@ -2,16 +2,61 @@
 \label{_g_p_i_o___u_c_8cpp}\index{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+G\+P\+I\+O\+\_\+\+U\+C.\+cpp@{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+G\+P\+I\+O\+\_\+\+U\+C.\+cpp}}
 
 
-Implementação dos métodos de acesso a entradas e saídas do microcontrolador.  
+Implements the methods of the \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class.  
 
 
 {\ttfamily \#include \char`\"{}G\+P\+I\+O\+\_\+\+U\+C.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}driverlib/gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}driverlib/sysctl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+memmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+gpio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}inc/hw\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_g_p_i_o___u_c_8cpp_a1f5d1820cabbff7f390eaa31ee8b98aa}{G\+P\+I\+O\+I\+SR}} (void)
+\begin{DoxyCompactList}\small\item\em friend function that performs the I\+SR treatment to read the inputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Implementação dos métodos de acesso a entradas e saídas do microcontrolador. 
+Implements the methods of the \mbox{\hyperlink{class_c_g_p_i_o}{C\+G\+P\+IO}} class. 
 
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
 \begin{DoxyAuthor}{Author}
 Kleber Gouveia 
 \end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 10, 2018
+\end{DoxyDate}
+Module Name\+: \mbox{\hyperlink{_g_p_i_o___u_c_8cpp}{G\+P\+I\+O\+\_\+\+U\+C.\+cpp}}\hypertarget{_u_a_r_t___u_c_8h_References}{}\subsection{References}\label{_u_a_r_t___u_c_8h_References}
+\hypertarget{_u_a_r_t___u_c_8h_Revisions}{}\subsection{Revisions}\label{_u_a_r_t___u_c_8h_Revisions}
+Revision\+: 1.\+0 10-\/\+Nov-\/2018 Kleber Gouveia
+\begin{DoxyItemize}
+\item Working baseline. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_g_p_i_o___u_c_8cpp_a1f5d1820cabbff7f390eaa31ee8b98aa}\label{_g_p_i_o___u_c_8cpp_a1f5d1820cabbff7f390eaa31ee8b98aa}} 
+\index{G\+P\+I\+O\+\_\+\+U\+C.\+cpp@{G\+P\+I\+O\+\_\+\+U\+C.\+cpp}!G\+P\+I\+O\+I\+SR@{G\+P\+I\+O\+I\+SR}}
+\index{G\+P\+I\+O\+I\+SR@{G\+P\+I\+O\+I\+SR}!G\+P\+I\+O\+\_\+\+U\+C.\+cpp@{G\+P\+I\+O\+\_\+\+U\+C.\+cpp}}
+\subsubsection{\texorpdfstring{G\+P\+I\+O\+I\+S\+R()}{GPIOISR()}}
+{\footnotesize\ttfamily void G\+P\+I\+O\+I\+SR (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+friend function that performs the I\+SR treatment to read the inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file G\+P\+I\+O\+\_\+\+U\+C.\+cpp.
+

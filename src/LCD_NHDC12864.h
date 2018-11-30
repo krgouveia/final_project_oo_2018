@@ -1,8 +1,24 @@
-/*!
- *  \file 		LCD_NHDC12864.h
- *  \brief		Implementação do driver para o display LCD NHDC1264.
- *  \author		Kleber Reis Gouveia Júnior
- */
+/**
+ * \file LCD_NHDC12864.h
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 27, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  LCD_NHDC12864.h
+ *
+ * \brief Implements the drivers of the LCD NHDC1264.
+ *
+ * \section References
+ * NHDC1264 Datasheet
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   27-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
 
 #ifndef LCD_NHDC12864_h
 #define LCD_NHDC12864_h
@@ -13,9 +29,7 @@ extern "C"
 #endif
 
 //Defines
-/**
- * Pinos LCD
- */
+/**LCD Pin mapping*/
 #define LCD_A0     GPIO_PIN_5 //PB5
 #define LCD_WR     GPIO_PIN_5 //PE5
 #define LCD_RD     GPIO_PIN_4 //PB4
@@ -28,22 +42,18 @@ extern "C"
 #define LCD_D6     GPIO_PIN_2 //PB2
 #define LCD_D7     GPIO_PIN_0 //PE0
 
-/**
- * Configurações para o driver do LCD.
- */
-#define COMP_LCD_CONFIG_VECTOR 11	/*!< Comprimento do vetor de configuração.*/
+/**LCD driver configurations*/
+#define COMP_LCD_CONFIG_VECTOR 11	/**Config vector length*/
+                                      
+#define COMM 0						/**Command mode*/
+#define DATA 1						/**Data mode*/
+#define STATUS 2					/**Status mode*/
+                                      
+#define MAX_COL 127					/**Maximum number of LCD columns*/
+#define MAX_LIN 63                  /**Maximum number of LCD lines*/
+#define MAX_PAGE 7                  /**Maximum number of LCD pages*/
 
-#define COMM 0						/*!< Modo Comando.*/
-#define DATA 1						/*!< Modo Dados.*/
-#define STATUS 2					/*!< Modo Status.*/
-
-#define MAX_COL 127					/*!< Endereço máximo das colunas do LCD.*/
-#define MAX_LIN 63                  /*!< Endereço máximo das linhas do LCD.*/
-#define MAX_PAGE 7                  /*!< Endereço máximo das páginas do LCD.*/
-
-/**Comandos do LCD NHD-C12864B2Z
-*Para maiores detalhes dos comandos ver datasheet do controlador de LCD ST7565R.
-*/
+/**LCD NHD-C12864B2Z commands*/
 #define LCD_ON              0xAF
 #define LCD_OFF             0xAE
 #define LCD_RAM_LINE        0x40  //mask 6bit low
@@ -77,7 +87,6 @@ extern "C"
 
 extern const char times8[95*7];
 
-//Protótipos das funções
 void LCDInitializeNHDC12864(void);
 void LCDWrite(char mode, char data);
 //unsigned char LCDRead(char mode);

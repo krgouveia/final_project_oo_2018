@@ -1,0 +1,122 @@
+\hypertarget{class_c_control}{}\section{C\+Control Class Reference}
+\label{class_c_control}\index{C\+Control@{C\+Control}}
+
+
+\mbox{\hyperlink{class_c_control}{C\+Control}} class implementation.  
+
+
+
+
+{\ttfamily \#include $<$C\+O\+N\+T\+R\+O\+L.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_control_a6498500ff403327b5770a3acebed1d93}\label{class_c_control_a6498500ff403327b5770a3acebed1d93}} 
+\mbox{\hyperlink{class_c_control_a6498500ff403327b5770a3acebed1d93}{C\+Control}} ()
+\begin{DoxyCompactList}\small\item\em G\+P\+IO constructor. This method create a C\+C\+O\+N\+T\+R\+OL object instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_control_ab2ae420ef75b010c0c9078e597781105}\label{class_c_control_ab2ae420ef75b010c0c9078e597781105}} 
+\mbox{\hyperlink{class_c_control_ab2ae420ef75b010c0c9078e597781105}{$\sim$\+C\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_control_aa997117cf869f0e31dbb1f87f29ae8bf}{message\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em This method coordinate timming and priorites of the messages to be shown at the display considering the priorities as F\+SM actions $>$ Date/\+Time information $>$ advertising. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_control_ab698c7d1945864d1f5c35e091de1ab22}{receive\+Command}} (void)
+\begin{DoxyCompactList}\small\item\em Method to receive a command from console and put it in the queue to be parsed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_control_a0ebf3ab01f3ea77f261b630ed2541f9d}{commands\+Parser}} (void)
+\begin{DoxyCompactList}\small\item\em Method parser the commands received from the commands queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_c_control}{C\+Control}} class implementation. 
+
+This class implements the methods to manager the messages and the commands of the system. 
+
+Definition at line 50 of file C\+O\+N\+T\+R\+O\+L.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_control_a0ebf3ab01f3ea77f261b630ed2541f9d}\label{class_c_control_a0ebf3ab01f3ea77f261b630ed2541f9d}} 
+\index{C\+Control@{C\+Control}!commands\+Parser@{commands\+Parser}}
+\index{commands\+Parser@{commands\+Parser}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{commands\+Parser()}{commandsParser()}}
+{\footnotesize\ttfamily void C\+Control\+::commands\+Parser (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method parser the commands received from the commands queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 142 of file C\+O\+N\+T\+R\+O\+L.\+cpp.
+
+
+
+References Cqueue$<$ T $>$\+::get\+Size(), Cqueue$<$ T $>$\+::pop\+Front(), Cqueue$<$ T $>$\+::push\+Back(), and C\+Console\+::write\+Log\+String().
+
+\mbox{\Hypertarget{class_c_control_aa997117cf869f0e31dbb1f87f29ae8bf}\label{class_c_control_aa997117cf869f0e31dbb1f87f29ae8bf}} 
+\index{C\+Control@{C\+Control}!message\+Manager@{message\+Manager}}
+\index{message\+Manager@{message\+Manager}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{message\+Manager()}{messageManager()}}
+{\footnotesize\ttfamily void C\+Control\+::message\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This method coordinate timming and priorites of the messages to be shown at the display considering the priorities as F\+SM actions $>$ Date/\+Time information $>$ advertising. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file C\+O\+N\+T\+R\+O\+L.\+cpp.
+
+
+
+References Cqueue$<$ T $>$\+::check\+Empty().
+
+\mbox{\Hypertarget{class_c_control_ab698c7d1945864d1f5c35e091de1ab22}\label{class_c_control_ab698c7d1945864d1f5c35e091de1ab22}} 
+\index{C\+Control@{C\+Control}!receive\+Command@{receive\+Command}}
+\index{receive\+Command@{receive\+Command}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{receive\+Command()}{receiveCommand()}}
+{\footnotesize\ttfamily void C\+Control\+::receive\+Command (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method to receive a command from console and put it in the queue to be parsed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file C\+O\+N\+T\+R\+O\+L.\+cpp.
+
+
+
+References Cqueue$<$ T $>$\+::push\+Back(), and C\+Console\+::\+Read\+Command().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_c_o_n_t_r_o_l_8h}{C\+O\+N\+T\+R\+O\+L.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_c_o_n_t_r_o_l_8cpp}{C\+O\+N\+T\+R\+O\+L.\+cpp}}\end{DoxyCompactItemize}

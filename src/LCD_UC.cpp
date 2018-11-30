@@ -1,3 +1,24 @@
+/**
+ * \file LCD_UC.h
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 27, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  LCD_UC.h
+ *
+ * \brief Implements the methods of the CLCD class.
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   27-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
 
 #include "LCD_UC.h"
 #include "driverlib/gpio.h"
@@ -7,6 +28,9 @@
 #include <string>
 using namespace std;
 
+/**
+*   \brief Class constructor. 
+*/
 CLCD::CLCD()
 {
 	//--GPIO PORTA
@@ -41,31 +65,54 @@ CLCD::CLCD()
     LCDSetColumn(0);
 }
 
+/**
+*   \brief Class destructor. 
+*/
 CLCD::~CLCD()
 {
 
 }
 
+ /**
+ * \brief Method to clear the entire LCD
+ * \param none
+ * \return none
+ */
 void CLCD::clearScreen()
 {
 	LCDClear();
 	setPosition(0,0);
 }
 
+ /**
+ * \brief Method to write a string in the LCD
+ * \param str - string to write
+ * \return none
+ */
 void CLCD::writeString(string str)
 {
     char* auxP = (char*)str.c_str();
 
     clearScreen();
-
 	LCDWriteString(times8,auxP);
 }
 
+ /**
+ * \brief Method to write a number in the LCD
+ * \param num - number to write
+ * \return none
+ */
 void CLCD::writeInteger(int num)
 {
 
 }
 
+ /**
+ * \brief Method to the position to write in LCD
+ * \param x - is the column
+ * \param y - is the page
+ * \return none
+ */
 void CLCD::setPosition(int x, int y)
 {
 	LCDSetPage(y);

@@ -1,35 +1,74 @@
-/*!
- *  \file       FSM.cpp
- *  \brief      Implementação dos métodos de controle da máquina de estados que gerencia a vending machine.
- *  \author     Kleber Gouveia
- */
-
+/**
+ * \file FSM.h
+ * \version 1.0
+ * \author Kleber Gouveia
+ * \date Nov 10, 2018
+ *
+ **************************************************************************
+ *
+ * Module Name:  FSM.h
+ *
+ * \brief Implements the methods of the CFSM class.
+ *
+ * \section References
+ *
+ **************************************************************************
+ * \section Revisions
+ *
+ * Revision: 1.0   10-Nov-2018    Kleber Gouveia
+ * * Working baseline.
+ *
+ ***************************************************************************/
+  
 #include "FSM.h"
 
+/**
+*   \brief Class constructor. 
+*/
 CFSM::CFSM()
 {
 	state = S000;
 }
 
+/**
+*   \brief Class destructor. 
+*/
 CFSM::~CFSM()
 {
 
 }
 
+/**
+ * \brief Method to change the state of the FSM.
+ * \param newState - new FSM state.
+ * \return none
+ */
 void CFSM::changeState(FSMstate_t newState)
 {
 	state = newState;
 }
 
+/**
+ * \brief Method get the state of the FSM.
+ * \param none
+ * \return actual FSM state
+ */
 FSMstate_t CFSM::getState()
 {
 	return state;
 }
 
+/**
+ * \brief Method that implements the FSM.
+ * \param queueP - pointer to a queue used to send messages informing the actions
+ * executed by the FSM.
+ * \return none
+ */
 void CFSM::runFSM(Cqueue<string>* queueP)
 {
 	string auxS;
 	
+	//each case is a FSM state
 	switch (state)
 	{
 		case S000:

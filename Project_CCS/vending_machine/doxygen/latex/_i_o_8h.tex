@@ -2,92 +2,33 @@
 \label{_i_o_8h}\index{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+I\+O.\+h@{C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\+I\+O.\+h}}
 
 
-Definição da classe de acesso a interface de entrada e sáida do sistema.  
+Define the class to model the IO interface.  
 
 
-\subsection*{Macros}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}queue.\+hpp\char`\"{}}\newline
+\subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_i_o_8h_ad289413cf5936a0c0c2a46d2d9aab03b}{M025}}~0x01
-\item 
-\#define \mbox{\hyperlink{_i_o_8h_a03058f38ccb7bdf6825fe20aff7dec68}{M050}}~0x02
-\item 
-\#define \mbox{\hyperlink{_i_o_8h_a992643b5ff82c3cc4b5f6609da7d2547}{M100}}~0x04
-\item 
-\#define \mbox{\hyperlink{_i_o_8h_a9af8717485817233e79a6039c170e7fe}{M\+E\+ET}}~0x08
-\item 
-\#define \mbox{\hyperlink{_i_o_8h_a44d040c31822071333f7ea49ce7b743d}{E\+T\+I\+R\+PS}}~0x10
-\item 
-\#define \mbox{\hyperlink{_i_o_8h_adb08aff46bb7262714b2a36aba398c9d}{D\+EV}}~0x20
-\end{DoxyCompactItemize}
+class \mbox{\hyperlink{class_c_i_o}{C\+IO}}
+\begin{DoxyCompactList}\small\item\em System\textquotesingle{}s IO class implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Definição da classe de acesso a interface de entrada e sáida do sistema. 
+Define the class to model the IO interface. 
 
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
 \begin{DoxyAuthor}{Author}
 Kleber Gouveia 
 \end{DoxyAuthor}
-
-
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{_i_o_8h_adb08aff46bb7262714b2a36aba398c9d}\label{_i_o_8h_adb08aff46bb7262714b2a36aba398c9d}} 
-\index{I\+O.\+h@{I\+O.\+h}!D\+EV@{D\+EV}}
-\index{D\+EV@{D\+EV}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{D\+EV}{DEV}}
-{\footnotesize\ttfamily \#define D\+EV~0x20}
-
-Devolucao 
-
-Definition at line 15 of file I\+O.\+h.
-
-\mbox{\Hypertarget{_i_o_8h_a44d040c31822071333f7ea49ce7b743d}\label{_i_o_8h_a44d040c31822071333f7ea49ce7b743d}} 
-\index{I\+O.\+h@{I\+O.\+h}!E\+T\+I\+R\+PS@{E\+T\+I\+R\+PS}}
-\index{E\+T\+I\+R\+PS@{E\+T\+I\+R\+PS}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{E\+T\+I\+R\+PS}{ETIRPS}}
-{\footnotesize\ttfamily \#define E\+T\+I\+R\+PS~0x10}
-
-Refrigerante E\+T\+I\+R\+PS 
-
-Definition at line 14 of file I\+O.\+h.
-
-\mbox{\Hypertarget{_i_o_8h_ad289413cf5936a0c0c2a46d2d9aab03b}\label{_i_o_8h_ad289413cf5936a0c0c2a46d2d9aab03b}} 
-\index{I\+O.\+h@{I\+O.\+h}!M025@{M025}}
-\index{M025@{M025}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{M025}{M025}}
-{\footnotesize\ttfamily \#define M025~0x01}
-
-Moeda de R\$0,25 
-
-Definition at line 10 of file I\+O.\+h.
-
-\mbox{\Hypertarget{_i_o_8h_a03058f38ccb7bdf6825fe20aff7dec68}\label{_i_o_8h_a03058f38ccb7bdf6825fe20aff7dec68}} 
-\index{I\+O.\+h@{I\+O.\+h}!M050@{M050}}
-\index{M050@{M050}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{M050}{M050}}
-{\footnotesize\ttfamily \#define M050~0x02}
-
-Moeda de R\$0,50 
-
-Definition at line 11 of file I\+O.\+h.
-
-\mbox{\Hypertarget{_i_o_8h_a992643b5ff82c3cc4b5f6609da7d2547}\label{_i_o_8h_a992643b5ff82c3cc4b5f6609da7d2547}} 
-\index{I\+O.\+h@{I\+O.\+h}!M100@{M100}}
-\index{M100@{M100}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{M100}{M100}}
-{\footnotesize\ttfamily \#define M100~0x04}
-
-Moeda de R\$1,00 
-
-Definition at line 12 of file I\+O.\+h.
-
-\mbox{\Hypertarget{_i_o_8h_a9af8717485817233e79a6039c170e7fe}\label{_i_o_8h_a9af8717485817233e79a6039c170e7fe}} 
-\index{I\+O.\+h@{I\+O.\+h}!M\+E\+ET@{M\+E\+ET}}
-\index{M\+E\+ET@{M\+E\+ET}!I\+O.\+h@{I\+O.\+h}}
-\subsubsection{\texorpdfstring{M\+E\+ET}{MEET}}
-{\footnotesize\ttfamily \#define M\+E\+ET~0x08}
-
-Refrigentante M\+E\+ET 
-
-Definition at line 13 of file I\+O.\+h.
-
+\begin{DoxyDate}{Date}
+Nov 10, 2018
+\end{DoxyDate}
+Module Name\+: \mbox{\hyperlink{_i_o_8h}{I\+O.\+h}}\hypertarget{_u_a_r_t___u_c_8h_References}{}\subsection{References}\label{_u_a_r_t___u_c_8h_References}
+\hypertarget{_u_a_r_t___u_c_8h_Revisions}{}\subsection{Revisions}\label{_u_a_r_t___u_c_8h_Revisions}
+Revision\+: 1.\+0 10-\/\+Nov-\/2018 Kleber Gouveia
+\begin{DoxyItemize}
+\item Working baseline. 
+\end{DoxyItemize}

@@ -1,0 +1,156 @@
+\hypertarget{class_cqueue}{}\section{Cqueue$<$ T $>$ Class Template Reference}
+\label{class_cqueue}\index{Cqueue$<$ T $>$@{Cqueue$<$ T $>$}}
+
+
+Queue implementation with generic node.  
+
+
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cqueue_a51d056d90c0162bbbdf554a2d4af785b}\label{class_cqueue_a51d056d90c0162bbbdf554a2d4af785b}} 
+\mbox{\hyperlink{class_cqueue_a51d056d90c0162bbbdf554a2d4af785b}{Cqueue}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cqueue_a2946de536ff33e0d84f721ce2d90056a}\label{class_cqueue_a2946de536ff33e0d84f721ce2d90056a}} 
+\mbox{\hyperlink{class_cqueue_a2946de536ff33e0d84f721ce2d90056a}{$\sim$\+Cqueue}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cqueue_a7c20a21cd08b993af7222796322ccaec}{check\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Method to check if the queue is empty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cqueue_ad9baee6f6676b1eb0f0dfe450ba38eb1}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Method to obtain the number of nodes that a queue contains. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cqueue_a901e6cfb613e56c487297633feb479b1}{push\+Back}} (T)
+\begin{DoxyCompactList}\small\item\em Method to create a node to insert new data at the end of teh queue. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_cqueue_a77d4728406bf0777254695f164132f3a}{pop\+Front}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the data from the queue and delete the node used to store it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Cqueue$<$ T $>$}
+
+Queue implementation with generic node. 
+
+This template class implements the methods to initialize and access queues with generic nodes. 
+
+Definition at line 33 of file queue.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cqueue_a7c20a21cd08b993af7222796322ccaec}\label{class_cqueue_a7c20a21cd08b993af7222796322ccaec}} 
+\index{Cqueue@{Cqueue}!check\+Empty@{check\+Empty}}
+\index{check\+Empty@{check\+Empty}!Cqueue@{Cqueue}}
+\subsubsection{\texorpdfstring{check\+Empty()}{checkEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ T $>$\+::check\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to check if the queue is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ T\+R\+UE if the queue is empty, F\+A\+L\+SE if it isn\textquotesingle{}t. 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file queue.\+hpp.
+
+
+
+Referenced by C\+Control\+::message\+Manager().
+
+\mbox{\Hypertarget{class_cqueue_ad9baee6f6676b1eb0f0dfe450ba38eb1}\label{class_cqueue_ad9baee6f6676b1eb0f0dfe450ba38eb1}} 
+\index{Cqueue@{Cqueue}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Cqueue@{Cqueue}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to obtain the number of nodes that a queue contains. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ number of nodes. 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file queue.\+hpp.
+
+
+
+Referenced by C\+Control\+::commands\+Parser().
+
+\mbox{\Hypertarget{class_cqueue_a77d4728406bf0777254695f164132f3a}\label{class_cqueue_a77d4728406bf0777254695f164132f3a}} 
+\index{Cqueue@{Cqueue}!pop\+Front@{pop\+Front}}
+\index{pop\+Front@{pop\+Front}!Cqueue@{Cqueue}}
+\subsubsection{\texorpdfstring{pop\+Front()}{popFront()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ T $>$\+::pop\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to get the data from the queue and delete the node used to store it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T -\/ generic data type information. 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file queue.\+hpp.
+
+
+
+Referenced by C\+Control\+::commands\+Parser().
+
+\mbox{\Hypertarget{class_cqueue_a901e6cfb613e56c487297633feb479b1}\label{class_cqueue_a901e6cfb613e56c487297633feb479b1}} 
+\index{Cqueue@{Cqueue}!push\+Back@{push\+Back}}
+\index{push\+Back@{push\+Back}!Cqueue@{Cqueue}}
+\subsubsection{\texorpdfstring{push\+Back()}{pushBack()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_cqueue}{Cqueue}}$<$ T $>$\+::push\+Back (\begin{DoxyParamCaption}\item[{T}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Method to create a node to insert new data at the end of teh queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Data} & -\/ Generic data type to be inserted at the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file queue.\+hpp.
+
+
+
+Referenced by C\+Control\+::commands\+Parser(), and C\+Control\+::receive\+Command().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{queue_8hpp}{queue.\+hpp}}\end{DoxyCompactItemize}

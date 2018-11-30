@@ -1,0 +1,188 @@
+\hypertarget{class_c_i_o}{}\section{C\+IO Class Reference}
+\label{class_c_i_o}\index{C\+IO@{C\+IO}}
+
+
+System\textquotesingle{}s IO class implementation.  
+
+
+
+
+{\ttfamily \#include $<$I\+O.\+h$>$}
+
+Inheritance diagram for C\+IO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i_o_a3359eaeb579531915933aa67d2fb02fd}\label{class_c_i_o_a3359eaeb579531915933aa67d2fb02fd}} 
+\mbox{\hyperlink{class_c_i_o_a3359eaeb579531915933aa67d2fb02fd}{C\+IO}} ()
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_i_o_ae35aa920244299f614fbc9c7d1edc4de}\label{class_c_i_o_ae35aa920244299f614fbc9c7d1edc4de}} 
+\mbox{\hyperlink{class_c_i_o_ae35aa920244299f614fbc9c7d1edc4de}{$\sim$\+C\+IO}} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_i_o_ac61124eef35d5b751783010b39b24b0d}{set\+Input}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to set an input flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_i_o_a5fddf5dbe86f9baac7e2c75dcd9d35e6}{clear\+Input}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to clear an input flag. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_i_o_aa87a99ef2b17c9243a745a6ec90fc5ef}{get\+Input}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to get an input flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_i_o_afc99e1a01c6de3f5f6126db69f8fd00e}{set\+Output}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to set an output flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_i_o_aa37612a9e9adfce7bf9b3a943bf961de}{clear\+Output}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to clear an output flag. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_i_o_acc87c3bab69009087ff8cbc09dff88a3}{get\+Output}} (int flag)
+\begin{DoxyCompactList}\small\item\em Method to get an output flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+System\textquotesingle{}s IO class implementation. 
+
+This class implements the virtual methods to access the I\+Os. 
+
+Definition at line 42 of file I\+O.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i_o_a5fddf5dbe86f9baac7e2c75dcd9d35e6}\label{class_c_i_o_a5fddf5dbe86f9baac7e2c75dcd9d35e6}} 
+\index{C\+IO@{C\+IO}!clear\+Input@{clear\+Input}}
+\index{clear\+Input@{clear\+Input}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{clear\+Input()}{clearInput()}}
+{\footnotesize\ttfamily void C\+I\+O\+::clear\+Input (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to clear an input flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Input to be cleared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file I\+O.\+cpp.
+
+\mbox{\Hypertarget{class_c_i_o_aa37612a9e9adfce7bf9b3a943bf961de}\label{class_c_i_o_aa37612a9e9adfce7bf9b3a943bf961de}} 
+\index{C\+IO@{C\+IO}!clear\+Output@{clear\+Output}}
+\index{clear\+Output@{clear\+Output}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{clear\+Output()}{clearOutput()}}
+{\footnotesize\ttfamily void C\+I\+O\+::clear\+Output (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to clear an output flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Output to be clared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file I\+O.\+cpp.
+
+\mbox{\Hypertarget{class_c_i_o_aa87a99ef2b17c9243a745a6ec90fc5ef}\label{class_c_i_o_aa87a99ef2b17c9243a745a6ec90fc5ef}} 
+\index{C\+IO@{C\+IO}!get\+Input@{get\+Input}}
+\index{get\+Input@{get\+Input}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{get\+Input()}{getInput()}}
+{\footnotesize\ttfamily bool C\+I\+O\+::get\+Input (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to get an input flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Input to be got. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file I\+O.\+cpp.
+
+\mbox{\Hypertarget{class_c_i_o_acc87c3bab69009087ff8cbc09dff88a3}\label{class_c_i_o_acc87c3bab69009087ff8cbc09dff88a3}} 
+\index{C\+IO@{C\+IO}!get\+Output@{get\+Output}}
+\index{get\+Output@{get\+Output}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{get\+Output()}{getOutput()}}
+{\footnotesize\ttfamily bool C\+I\+O\+::get\+Output (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to get an output flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Output to be got. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file I\+O.\+cpp.
+
+\mbox{\Hypertarget{class_c_i_o_ac61124eef35d5b751783010b39b24b0d}\label{class_c_i_o_ac61124eef35d5b751783010b39b24b0d}} 
+\index{C\+IO@{C\+IO}!set\+Input@{set\+Input}}
+\index{set\+Input@{set\+Input}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{set\+Input()}{setInput()}}
+{\footnotesize\ttfamily void C\+I\+O\+::set\+Input (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to set an input flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Input to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file I\+O.\+cpp.
+
+\mbox{\Hypertarget{class_c_i_o_afc99e1a01c6de3f5f6126db69f8fd00e}\label{class_c_i_o_afc99e1a01c6de3f5f6126db69f8fd00e}} 
+\index{C\+IO@{C\+IO}!set\+Output@{set\+Output}}
+\index{set\+Output@{set\+Output}!C\+IO@{C\+IO}}
+\subsubsection{\texorpdfstring{set\+Output()}{setOutput()}}
+{\footnotesize\ttfamily void C\+I\+O\+::set\+Output (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})}
+
+
+
+Method to set an output flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ Output to be set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file I\+O.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_i_o_8h}{I\+O.\+h}}\item 
+C\+:/\+Users/\+User/\+Dropbox/\+U\+F\+S\+C/2018.\+2/\+O\+O/\+Projeto\+\_\+\+Final/fw/src/\mbox{\hyperlink{_i_o_8cpp}{I\+O.\+cpp}}\end{DoxyCompactItemize}
